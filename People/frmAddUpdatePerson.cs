@@ -1,4 +1,5 @@
 ﻿using DVLD_Buessness;
+using DVLD_Buessness.Utilty;
 using DVLD_Buessness.Validations;
 using DVLD_WithoutUC.Properties;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -179,12 +181,43 @@ namespace DVLD_WithoutUC.People
             }
             else
             {
-                MessageBox.Show("Error: Data Not Saved Successfuly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Exception ex = new Exception();
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Error: Data Not Saved Successfuly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private bool _HundelPersonImage()
         {
+            if(_Person.ImagePath != pbPersonPic.ImageLocation)
+            {
+                if(_Person.ImagePath != "")
+                {
+                    try
+                    {
+                        File.Delete(_Person.ImagePath);
+                    }
+                    catch(IOException)
+                    {
+
+                    }
+                }
+                if(pbPersonPic.ImageLocation != null)
+                {
+                    string SourceImageFile =pbPersonPic.ImageLocation.ToString();
+                    if(clsUtil.CopyImageToProjectImagesFile(ref SourceImageFile))
+                    {
+                        pbPersonPic.ImageLocation = SourceImageFile;
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error Copying Pictuer Faild" ,"Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+            }
+
             return true;
         }
 

@@ -7,16 +7,14 @@
       "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:people\\frmaddupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B95DE485-342A-46F2-994E-782B658D1717}|..\\DVLD\\DVLD_DataAccess\\DVLD_DataAccess.csproj|c:\\users\\hp\\desktop\\c#\\projects\\dvld\\dvld_dataaccess\\peopledataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|c:\\users\\hp\\desktop\\c#\\projects\\dvld_withoutuc\\people\\frmaddupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:people\\frmaddupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|c:\\users\\hp\\desktop\\c#\\projects\\dvld_withoutuc\\people\\frmlistpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:people\\frmlistpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|c:\\users\\hp\\desktop\\c#\\projects\\dvld_withoutuc\\people\\frmlistpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:people\\frmlistpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7730028B-2136-43AD-8FAB-BE49FC3183EC}|..\\DVLD\\DVLD_Buessness\\DVLD_Buessness.csproj|c:\\users\\hp\\desktop\\c#\\projects\\dvld\\dvld_buessness\\utilty\\clsutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,53 +40,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PeopleDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD\\DVLD_DataAccess\\PeopleDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\DVLD_DataAccess\\PeopleDataAccess.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD\\DVLD_DataAccess\\PeopleDataAccess.cs",
+              "RelativeToolTip": "..\\DVLD\\DVLD_DataAccess\\PeopleDataAccess.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAUwPEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T01:36:00.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmAddUpdatePerson.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmAddUpdatePerson.cs",
               "RelativeDocumentMoniker": "People\\frmAddUpdatePerson.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmAddUpdatePerson.cs",
               "RelativeToolTip": "People\\frmAddUpdatePerson.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAUwKMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T23:28:42.602Z",
+              "WhenOpened": "2026-08-07T01:30:10.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmAddUpdatePerson.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmAddUpdatePerson.cs",
               "RelativeDocumentMoniker": "People\\frmAddUpdatePerson.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmAddUpdatePerson.cs [Design]",
               "RelativeToolTip": "People\\frmAddUpdatePerson.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T23:28:15.736Z",
+              "WhenOpened": "2026-08-07T00:44:54.289Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmListPeople.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmListPeople.cs",
-              "RelativeDocumentMoniker": "People\\frmListPeople.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmListPeople.cs",
-              "RelativeToolTip": "People\\frmListPeople.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T23:27:09.163Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmListPeople.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmListPeople.cs",
-              "RelativeDocumentMoniker": "People\\frmListPeople.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD_WithoutUC\\People\\frmListPeople.cs [Design]",
-              "RelativeToolTip": "People\\frmListPeople.cs [Design]",
+              "Title": "clsUtil.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD\\DVLD_Buessness\\Utilty\\clsUtil.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\DVLD_Buessness\\Utilty\\clsUtil.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\C#\\Projects\\DVLD\\DVLD_Buessness\\Utilty\\clsUtil.cs",
+              "RelativeToolTip": "..\\DVLD\\DVLD_Buessness\\Utilty\\clsUtil.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T23:26:40.684Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-07T00:17:37.089Z",
+              "EditorCaption": ""
             }
           ]
         }
