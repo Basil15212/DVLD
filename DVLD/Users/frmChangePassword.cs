@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Users;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +20,7 @@ namespace DVLD_WithoutUC.Users
         {
             InitializeComponent();
             _UserID = UserID;
-            _User = clsUser.Find(UserID);
+            _User = clsUser.FindByUserID(UserID);
         }
         private void changePasswordValidation()
         {

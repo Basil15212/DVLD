@@ -20,8 +20,8 @@ namespace DVLD_WithoutUC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             //Application.Run(new frmMainScreen());
-            Application.Run(new frmLogin());
+             Application.Run(new frmMainScreen());
+            //Application.Run(new frmLogin());
             //Application.Run(new frmListTestTypes());
             //Application.Run(new frmManageAplicationTypes());
             //Application.Run(new frmAddPersonWithFilter());

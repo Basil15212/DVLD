@@ -1,7 +1,6 @@
-﻿using DVLD_Buessness;
-using DVLD_WithoutUC.Properties;
+﻿using DVLDBussnessLayer;
+using DVLD_WithoutUC;
 using System;
-using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,20 +9,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using System.IO;
 using DVLD_WithoutUC.People;
+using DVLD_WithoutUC.Properties;
+
+
 
 namespace DVLD_WithoutUC
 {
     public partial class ctrlPersonCard : UserControl
     {
 
-        private clsPeople_Buessness _Person;
+        private clsPerson _Person;
         private int _PersonID =-1;
         public int PersonID
         {
             get { return _PersonID; }
         }
-        public clsPeople_Buessness SelectedPerosnInfo
+        public clsPerson SelectedPerosnInfo
         {
             get { return _Person; }
         }
@@ -36,7 +40,7 @@ namespace DVLD_WithoutUC
 
         public void LoudPersonInfo(int  personID)
         {
-            _Person = clsPeople_Buessness.Find(personID);
+            _Person = clsPerson.Find(personID);
             if(_Person == null)
             {
                 ResetPersonInfo();
@@ -48,7 +52,7 @@ namespace DVLD_WithoutUC
 
         public void LoudPersonInfo(string NationalNO)
         {
-            _Person = clsPeople_Buessness.Find(NationalNO);
+            _Person = clsPerson.Find(NationalNO);
             if (_Person == null)
             {
                 ResetPersonInfo();
@@ -99,7 +103,7 @@ namespace DVLD_WithoutUC
             llEditPersonInfo.Enabled = true;
             _PersonID = _Person.PersonID;
             lblPersonID.Text = _PersonID.ToString();
-            lblFullName.Text = _Person.FullName();
+            lblFullName.Text = _Person.FullName;
             lblNationalNO.Text =_Person.NationalNo;
             if (_Person.Gendor == 0)
                 lblGendor.Text = "Male";
@@ -111,7 +115,7 @@ namespace DVLD_WithoutUC
             lblPhone.Text = _Person.Phone;
             lblDateOfBirth.Text = _Person.DateOfBirth.ToShortDateString();
 
-            clsBusCountries Country = clsBusCountries.Find(_Person.NationaltyCountryID);
+            clsCountry Country = clsCountry.Find(_Person.NationalityCountryID);
             if(Country != null)
             {
                 lblCountry.Text = Country.CountryName;

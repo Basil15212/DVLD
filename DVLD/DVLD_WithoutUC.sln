@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.9.12120.119 stable
+VisualStudioVersion = 18.9.12120.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD_WithoutUC", "DVLD_WithoutUC.csproj", "{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLVDData_Access", "..\DLVDData_Access\DLVDData_Access.csproj", "{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLDBussnessLayer", "..\DVLDBussnessLayer\DVLDBussnessLayer.csproj", "{AA57B13F-37ED-430B-BB67-85260D466E9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA57B13F-37ED-430B-BB67-85260D466E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA57B13F-37ED-430B-BB67-85260D466E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA57B13F-37ED-430B-BB67-85260D466E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA57B13F-37ED-430B-BB67-85260D466E9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

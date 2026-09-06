@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Users;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +27,7 @@ namespace DVLD_WithoutUC.Users
         }
         private void _LoudUsers()
         {
-            _dtAllUsers = clsUser.ListUsers();
+            _dtAllUsers = clsUser.GetAllUsers();
             dgvUsers.DataSource = _dtAllUsers;
 
             dgvUsers.Columns["UserID"].HeaderText = "User ID";

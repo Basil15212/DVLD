@@ -1,6 +1,5 @@
-﻿using DVLD_Buessness;
-using DVLD_Buessness.Users;
-using DVLD_Buessness.Validations;
+﻿using DVLDBussnessLayer;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,7 +62,7 @@ namespace DVLD_WithoutUC.Users
             else
             {
                 lblAddUserTitle.Text = "Edit User Info";
-                _User = clsUser.Find(_UserID);
+                _User = clsUser.FindByUserID(_UserID);
                 ctrlPersonCardWithFilter1.LoudPersonInfo(_User.PersonID);
                 resetForEdit();
             }
@@ -76,10 +75,12 @@ namespace DVLD_WithoutUC.Users
             else
                 errorProvider1.SetError(txtUserName, "");
 
-            if (clsUser.IsExist(txtUserName.Text ,_UserID))
-                errorProvider1.SetError(txtUserName, "This User Name is already Used");
-            else
-                errorProvider1.SetError(txtUserName, "");
+            //Checck if  user name is already used or not 
+
+            //if (clsUser.(txtUserName.Text ,_UserID))
+            //    errorProvider1.SetError(txtUserName, "This User Name is already Used");
+            //else
+            //    errorProvider1.SetError(txtUserName, "");
 
         }
 
@@ -104,7 +105,7 @@ namespace DVLD_WithoutUC.Users
         private void btnNext_Click(object sender, EventArgs e)
         {
            
-            if(clsUser.IsExistForPerson(_PersonID))
+            if(clsUser.isUserExistForPersonID(_PersonID))
             {
                 MessageBox.Show("This Person IS Already a User" ,"Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -133,7 +134,7 @@ namespace DVLD_WithoutUC.Users
             }
 
 
-            _User.PersonInfo = clsPeople_Buessness.Find(_PersonID);
+            _User.PersonInfo = clsPerson.Find(_PersonID);
            
             _User.UserName = txtUserName.Text;
             _User.Password = txtPassword.Text;

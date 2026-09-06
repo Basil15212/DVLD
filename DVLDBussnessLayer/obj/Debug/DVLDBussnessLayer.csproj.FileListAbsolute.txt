@@ -1,0 +1,9 @@
+D:\My Ripo\DVLDBussnessLayer\bin\Debug\DVLDBussnessLayer.dll
+D:\My Ripo\DVLDBussnessLayer\bin\Debug\DVLDBussnessLayer.pdb
+D:\My Ripo\DVLDBussnessLayer\bin\Debug\DLVDData_Access.dll
+D:\My Ripo\DVLDBussnessLayer\bin\Debug\DLVDData_Access.pdb
+D:\My Ripo\DVLDBussnessLayer\obj\Debug\DVLDBussnessLayer.csproj.AssemblyReference.cache
+D:\My Ripo\DVLDBussnessLayer\obj\Debug\DVLDBussnessLayer.csproj.CoreCompileInputs.cache
+D:\My Ripo\DVLDBussnessLayer\obj\Debug\DVLDBuss.198E7689.Up2Date
+D:\My Ripo\DVLDBussnessLayer\obj\Debug\DVLDBussnessLayer.dll
+D:\My Ripo\DVLDBussnessLayer\obj\Debug\DVLDBussnessLayer.pdb

@@ -1,0 +1,6 @@
+D:\My Ripo\DLVDData_Access\bin\Debug\DLVDData_Access.dll
+D:\My Ripo\DLVDData_Access\bin\Debug\DLVDData_Access.pdb
+D:\My Ripo\DLVDData_Access\obj\Debug\DLVDData_Access.csproj.AssemblyReference.cache
+D:\My Ripo\DLVDData_Access\obj\Debug\DLVDData_Access.csproj.CoreCompileInputs.cache
+D:\My Ripo\DLVDData_Access\obj\Debug\DLVDData_Access.dll
+D:\My Ripo\DLVDData_Access\obj\Debug\DLVDData_Access.pdb

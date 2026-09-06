@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Users;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,7 +50,7 @@ namespace DVLD_WithoutUC.Users.Controls
         {
             _UserID = UserId;
 
-            _User = clsUser.Find(UserId);
+            _User = clsUser.FindByUserID(UserId);
             if(_User == null )
             {
                 _ResetUserInfo();

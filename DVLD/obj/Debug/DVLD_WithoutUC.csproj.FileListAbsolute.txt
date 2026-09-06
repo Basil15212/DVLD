@@ -30,3 +30,35 @@ C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.csproj.C
 C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_Wit.33163A76.Up2Date
 C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.exe
 C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.pdb
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.AssemblyReference.cache
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.frmEditApplicatioinType.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.frmManageAplicationTypes.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.ctrlPersonCard.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.frmMainScreen.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.Controls.ctrlPersonCardWithFilter.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.frmAddUpdatePerson.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.frmFindPerson.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_Buessness.People.frmListPeople.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.frmShowPersonInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Properties.Resources.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_DataAccess.Text_Types.frmEditTestType.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.TestT_ypes.frmListTestTypes.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.test.frmAddPersonWithFilter.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.Controls.ctrlUserInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.frmAddUpdateUSer.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.frmChangePassword.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.frmListUsers.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.frmLogin.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Users.frmUserInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.GenerateResource.cache
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.CoreCompileInputs.cache
+D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.exe.config
+D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.exe
+D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.pdb
+D:\My Ripo\DVLD\bin\Debug\DVLDBussnessLayer.dll
+D:\My Ripo\DVLD\bin\Debug\DLVDData_Access.dll
+D:\My Ripo\DVLD\bin\Debug\DVLDBussnessLayer.pdb
+D:\My Ripo\DVLD\bin\Debug\DLVDData_Access.pdb
+D:\My Ripo\DVLD\obj\Debug\DVLD_Wit.33163A76.Up2Date
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.exe
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb

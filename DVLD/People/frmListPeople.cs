@@ -1,4 +1,5 @@
 ﻿using DVLD_WithoutUC.People;
+using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace DVLD_Buessness.People
     public partial class frmListPeople : Form
     {
 
-        private static DataTable _dtAllPeople ;
+        private  DataTable _dtAllPeople ;
         private DataTable _dtPeople ;
 
         public frmListPeople()
@@ -31,7 +32,9 @@ namespace DVLD_Buessness.People
 
         private void _RefreshPeopleList()
         {
-             _dtAllPeople = clsPeople_Buessness.ListPeople();
+             _dtAllPeople = clsPerson.GetAllPeople();
+            if (_dtAllPeople == null)
+                return;
              _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "SecondName", "ThirdName", "LastName",
                                                                         "Gendor", "DateOfBirth", "Nationality", "Phone", "Email");
 
@@ -122,7 +125,7 @@ namespace DVLD_Buessness.People
             if (MessageBox.Show("Are You Sure u Want to delete person with id =" + ID, 
                 "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                if(clsPeople_Buessness.DeletePersonByID(ID))
+                if(clsPerson.DeletePerson(ID))
                 {
                     MessageBox.Show("Person Deleted Successfuly", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmListPeople_Load(null, null);
@@ -267,6 +270,11 @@ namespace DVLD_Buessness.People
         private void AddNewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btnAddNew.PerformClick();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

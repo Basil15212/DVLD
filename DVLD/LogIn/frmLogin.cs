@@ -1,4 +1,5 @@
-﻿using DVLD_Buessness.Users;
+﻿using DVLD_Buessness.People;
+using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,16 +35,16 @@ namespace DVLD_WithoutUC.Users
                 return;
             }
 
-            clsUser User = clsUser.Find(txtUserName.Text.Trim(), txtPassword.Text.Trim());
+            clsUser User = clsUser.FindByUsernameAndPassword(txtUserName.Text.Trim(), txtPassword.Text.Trim());
             if (User != null)
             {
 
                 if (ckbRememberMe.Checked)
                 {
-                    clsGlobal.RememberMeSave(txtUserName.Text.Trim(), txtPassword.Text.Trim());
+                    clsGlobal.RememberUsernameAndPassword(txtUserName.Text.Trim(), txtPassword.Text.Trim());
                 }
                 else
-                    clsGlobal.RememberMeSave("", "");
+                    clsGlobal.RememberUsernameAndPassword("", "");
 
 
                 if (User.IsActive == true)
@@ -90,7 +91,7 @@ namespace DVLD_WithoutUC.Users
         {
             string UserName = "", Password = "";
             _ResetLogin();
-            if (clsGlobal._RememberMeGetBack(ref UserName, ref Password))
+            if (clsGlobal.RememberUsernameAndPassword( UserName, Password))
             {
                 txtUserName.Text = UserName;
                 txtPassword.Text = Password;

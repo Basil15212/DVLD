@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Aplication_Types;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +21,7 @@ namespace DVLD_WithoutUC.Aplications
 
         private void frmManageAplicationTypes_Load(object sender, EventArgs e)
         {
-            _dtAplicationTypes = clsAplicationTypes.ListAplicationTypes();
+            _dtAplicationTypes = clsApplicationType.GetAllApplicationTypes();
             dgvAplicationTypes.DataSource = _dtAplicationTypes;
             dgvAplicationTypes.Columns[0].Width = 60;
             dgvAplicationTypes.Columns[1].Width = 320;

@@ -1,7 +1,8 @@
 ﻿using DVLD_Buessness;
-using DVLD_Buessness.Utilty;
-using DVLD_Buessness.Validations;
+//using DVLD_Buessness.Utilty;
+//using DVLD_Buessness.Validations;
 using DVLD_WithoutUC.Properties;
+using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace DVLD_WithoutUC.People
 
         private enMode _Mode ;
         private int _PersonID = -1;
-        private clsPeople_Buessness _Person;
+        private clsPerson _Person;
 
         public frmAddUpdatePerson()
         {
@@ -52,7 +53,7 @@ namespace DVLD_WithoutUC.People
             if(_Mode == enMode.AddNew)
             {
                 lblTitle.Text = "Add New Person";
-                _Person =new clsPeople_Buessness();
+                _Person =new clsPerson();
             }
             else
             {
@@ -90,7 +91,7 @@ namespace DVLD_WithoutUC.People
         }
         private void _FillCountriesInComboBox()
         {
-            DataTable dtCountries = clsBusCountries.GetAllCountries();
+            DataTable dtCountries = clsCountry.GetAllCountries();
             foreach(DataRow dr in dtCountries.Rows)
             {
                 cbCountries.Items.Add(dr["CountryName"]);
@@ -98,7 +99,7 @@ namespace DVLD_WithoutUC.People
         }
         private void _LoadData()
         {
-            _Person = clsPeople_Buessness.Find(_PersonID);
+            _Person = clsPerson.Find(_PersonID);
             if(_Person == null)
             {
                 MessageBox.Show("No Person With ID["+_PersonID+"]" ,"Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -107,7 +108,7 @@ namespace DVLD_WithoutUC.People
             }
             lblPersonID.Text    =_Person.PersonID.ToString();
             txtFirstName.Text   = _Person.FirstName;
-            txtSecondName.Text  = _Person.SecName;
+            txtSecondName.Text  = _Person.SecondName;
             txtThirdName.Text   = _Person.ThirdName;
             txtLastName.Text    = _Person.LastName;
             txtNationalNO.Text  = _Person.NationalNo;
@@ -155,8 +156,8 @@ namespace DVLD_WithoutUC.People
                 return;
             }
 
-            _Person.CountryInfo = clsBusCountries.Find(cbCountries.Text);
-            //int NationalCountryID = clsBusCountries.Find(cbCountries.Text).CountryID;
+            _Person.CountryInfo = clsCountry.Find(cbCountries.Text);
+            //int NationalCountryID = clsCountry.Find(cbCountries.Text).CountryID;
 
 
             if(_Person.CountryInfo == null)
@@ -165,7 +166,7 @@ namespace DVLD_WithoutUC.People
                 return;
             }
             _Person.FirstName= txtFirstName.Text.Trim();
-            _Person.SecName =txtSecondName.Text.Trim();
+            _Person.SecondName =txtSecondName.Text.Trim();
             _Person.ThirdName =txtThirdName.Text.Trim();
             _Person.LastName =txtLastName.Text.Trim();
             _Person.Phone =txtPhone.Text.Trim();
@@ -181,7 +182,7 @@ namespace DVLD_WithoutUC.People
                 _Person.Gendor = (short)enGendor.Female;
 
 
-            _Person.NationaltyCountryID = _Person.CountryInfo.CountryID;
+            _Person.NationalityCountryID = _Person.CountryInfo.ID;
 
             
 
@@ -229,7 +230,7 @@ namespace DVLD_WithoutUC.People
                 if(pbPersonPic.ImageLocation != null)
                 {
                     string SourceImageFile =pbPersonPic.ImageLocation.ToString();
-                    if(clsUtil.CopyImageToProjectImagesFile(ref SourceImageFile))
+                    if(clsUtil.CopyImageToProjectImagesFolder(ref SourceImageFile))
                     {
                         pbPersonPic.ImageLocation = SourceImageFile;
                         return true;
@@ -266,7 +267,7 @@ namespace DVLD_WithoutUC.People
                 return;
             }
 
-            if(!clsValidations.ValidateEmail(txtEmail.Text))
+            if(!clsValidatoin.ValidateEmail(txtEmail.Text))
             {
                 //e.Cancel =true;
                 errorProvider1.SetError(txtEmail, "InValid Email Format!");
@@ -290,7 +291,7 @@ namespace DVLD_WithoutUC.People
             {
                 errorProvider1.SetError(txtNationalNO, null);
             }
-            if(txtNationalNO.Text.Trim() != _Person.NationalNo && clsPeople_Buessness.IsExist(txtNationalNO.Text.Trim()))
+            if(txtNationalNO.Text.Trim() != _Person.NationalNo && clsPerson.isPersonExist(txtNationalNO.Text.Trim()))
             {
               //  e.Cancel =true;
                 errorProvider1.SetError(txtNationalNO, "National Number  is Used for another Person");

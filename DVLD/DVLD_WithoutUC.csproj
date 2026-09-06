@@ -58,6 +58,9 @@
     <Compile Include="Aplications\frmManageAplicationTypes.Designer.cs">
       <DependentUpon>frmManageAplicationTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsUtil.cs" />
+    <Compile Include="clsValidatoin.cs" />
     <Compile Include="People\Controls\ctrlPersonCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +242,11 @@
   <ItemGroup>
     <None Include="Resources\man.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DVLDBussnessLayer\DVLDBussnessLayer.csproj">
+      <Project>{aa57b13f-37ed-430b-bb67-85260d466e9e}</Project>
+      <Name>DVLDBussnessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

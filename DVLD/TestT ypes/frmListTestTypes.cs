@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Test_Types;
+﻿using DVLDBussnessLayer;
 using DVLD_DataAccess.Text_Types;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace DVLD_WithoutUC.TestT_ypes
 
         private void frmListTestTypes_Load(object sender, EventArgs e)
         {
-            _dtTestTypes = clsTestTypes.ListTestTypes();
+            _dtTestTypes = clsTestType.GetAllTestTypes();
             
             dgvTestTypes.DataSource = _dtTestTypes;
 
@@ -46,7 +46,7 @@ namespace DVLD_WithoutUC.TestT_ypes
 
         private void editTestTypeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditTestType frm = new frmEditTestType((int)dgvTestTypes.CurrentRow.Cells[0].Value);
+            frmEditTestType frm = new frmEditTestType((clsTestType.enTestType)dgvTestTypes.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
             frmListTestTypes_Load(null, null);
 

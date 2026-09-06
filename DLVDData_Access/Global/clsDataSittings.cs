@@ -8,7 +8,7 @@ namespace DLVDData_Access
 {
     internal class clsDataSittings
     {
-        public static string ConnectionString = "Server=.;Database=DVLD;User Id=sa;Password=123456;";
+        public static string ConnectionString = "Server=.;Database=DVLD;User Id=sa;Password=sa123456;";
 
 
     }

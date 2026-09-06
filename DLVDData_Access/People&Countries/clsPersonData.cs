@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DLVDData_Access
 {
-    public class clsPeronData
+    public class clsPersonData
     {
 
         public static bool GetPersonInfoByID(int PersonID, ref string FirstName, ref string SecondName,

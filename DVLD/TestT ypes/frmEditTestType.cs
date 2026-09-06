@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Test_Types;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +13,9 @@ namespace DVLD_DataAccess.Text_Types
 {
     public partial class frmEditTestType : Form
     {
-        private int _TestTypeID;
-        private clsTestTypes _TesType;
-        public frmEditTestType(int ID)
+        private clsTestType.enTestType _TestTypeID = clsTestType.enTestType.VisionTest;
+        private clsTestType _TesType;
+        public frmEditTestType(clsTestType.enTestType ID)
         {
             InitializeComponent();
             _TestTypeID = ID;
@@ -23,17 +23,17 @@ namespace DVLD_DataAccess.Text_Types
 
         private void frmEditTestType_Load(object sender, EventArgs e)
         {
-            _TesType = clsTestTypes.Find(_TestTypeID);
+            _TesType = clsTestType.Find(_TestTypeID);
             if(_TesType ==  null)
             {
                 MessageBox.Show("InValid Test Type ID " ,"Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            lblID.Text =_TesType.TestTypeID.ToString();
-            txtTestTypeTitle.Text = _TesType.TestTypeTitle;
-            txtDescription.Text = _TesType.TestTypeDescription;
-            txtFees.Text =_TesType.TestTypeFees.ToString();
+            lblID.Text =_TesType.ID.ToString();
+            txtTestTypeTitle.Text = _TesType.Title;
+            txtDescription.Text = _TesType.Description;
+            txtFees.Text =_TesType.Fees.ToString();
 
         }
 
@@ -42,9 +42,9 @@ namespace DVLD_DataAccess.Text_Types
             if (!this.ValidateChildren())
                 return;
 
-            _TesType.TestTypeTitle = txtTestTypeTitle.Text.Trim();
-            _TesType.TestTypeFees =Convert.ToDecimal(txtFees.Text);
-            _TesType.TestTypeDescription = txtDescription.Text.Trim();
+            _TesType.Title = txtTestTypeTitle.Text.Trim();
+            _TesType.Fees =Convert.ToSingle(txtFees.Text);
+            _TesType.Description = txtDescription.Text.Trim();
             if(_TesType.Save())
             {
                 MessageBox.Show("Saved Successfuly","Saved" ,MessageBoxButtons.OK, MessageBoxIcon.Information);

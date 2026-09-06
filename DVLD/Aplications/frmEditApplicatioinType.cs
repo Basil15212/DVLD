@@ -1,4 +1,4 @@
-﻿using DVLD_Buessness.Aplication_Types;
+﻿using DVLDBussnessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace DVLD_WithoutUC.Aplications
     public partial class frmEditApplicatioinType : Form
     {
         int _CurrentAppID;
-        clsAplicationTypes _App;
+        clsApplicationType _App;
 
         public frmEditApplicatioinType()
         {
@@ -36,12 +36,12 @@ namespace DVLD_WithoutUC.Aplications
         }
         private void frmEditApplicatioinType_Load(object sender, EventArgs e)
         {
-            _App = clsAplicationTypes.Find(_CurrentAppID);
+            _App = clsApplicationType.Find(_CurrentAppID);
             if(_App != null )
             {
                 lblTypeID.Text = _CurrentAppID.ToString();
-                txtTitleType.Text = _App.AplicationTitle;
-                txtTypeFees.Text =_App.AplicationFees.ToString();
+                txtTitleType.Text = _App.Title;
+                txtTypeFees.Text =_App.Fees.ToString();
             }
             
         }
@@ -61,8 +61,8 @@ namespace DVLD_WithoutUC.Aplications
                 MessageBox.Show("Some Fields are Required","Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            _App.AplicationFees =Convert.ToDecimal(txtTypeFees.Text);
-            _App.AplicationTitle = txtTitleType.Text.Trim();
+            _App.Fees =Convert.ToSingle(txtTypeFees.Text);
+            _App.Title = txtTitleType.Text.Trim();
             if(_App.Save())
             {
                 MessageBox.Show("Saved Successfuly", "Saved" , MessageBoxButtons.OK, MessageBoxIcon.Information);

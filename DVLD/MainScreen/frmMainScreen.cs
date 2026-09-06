@@ -1,5 +1,5 @@
 ﻿using DVLD_Buessness.People;
-using DVLD_Buessness.Users;
+//using DVLD_Buessness.Users;
 using DVLD_WithoutUC.Aplications;
 using DVLD_WithoutUC.TestT_ypes;
 using DVLD_WithoutUC.Users;
@@ -23,11 +23,23 @@ namespace DVLD_WithoutUC
             InitializeComponent();
             _FrmLogin = frmLogin;
         }
+        public frmMainScreen()
+        {
+            InitializeComponent();
+           // _FrmLogin = frmLogin;
+        }
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListPeople frmListPeople = new frmListPeople();
-            frmListPeople.ShowDialog();
+            try
+            {
+                frmListPeople frmListPeople = new frmListPeople();
+                frmListPeople.ShowDialog();
+            }catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)

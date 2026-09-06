@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DVLDBussnessLayer;
 
 namespace DVLD_WithoutUC.People.Controls
 {
@@ -57,7 +58,7 @@ namespace DVLD_WithoutUC.People.Controls
         {
             get { return ctrlPersonCard1.PersonID; }
         }
-        public clsPeople_Buessness SelectedPersonInfo
+        public clsPerson SelectedPersonInfo
         {
             get { return ctrlPersonCard1.SelectedPerosnInfo; }
         }
