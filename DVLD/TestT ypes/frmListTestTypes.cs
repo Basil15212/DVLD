@@ -36,10 +36,10 @@ namespace DVLD_WithoutUC.TestT_ypes
             if (dgvTestTypes.Rows.Count == 0)
                 return;
             dgvTestTypes.RowHeadersWidth = 15;
-            dgvTestTypes.Columns["ID"].Width = 50;
-            dgvTestTypes.Columns["Title"].Width = 200;
-            dgvTestTypes.Columns["Description"].Width = 320;
-            dgvTestTypes.Columns["Fees"].Width = 100;
+            dgvTestTypes.Columns["TestTypeID"].Width = 50;
+            dgvTestTypes.Columns["TestTypeTitle"].Width = 200;
+            dgvTestTypes.Columns["TestTypeDescription"].Width = 320;
+            dgvTestTypes.Columns["TestTypeFees"].Width = 100;
 
             lblRecords.Text =dgvTestTypes.Rows.Count.ToString();
         }

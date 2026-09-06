@@ -91,7 +91,7 @@ namespace DVLD_WithoutUC.Users
         {
             string UserName = "", Password = "";
             _ResetLogin();
-            if (clsGlobal.RememberUsernameAndPassword( UserName, Password))
+            if (clsGlobal.GetStoredCredential( ref UserName,ref Password))
             {
                 txtUserName.Text = UserName;
                 txtPassword.Text = Password;

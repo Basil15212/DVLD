@@ -36,7 +36,7 @@ namespace DVLD_Buessness.People
             if (_dtAllPeople == null)
                 return;
              _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "SecondName", "ThirdName", "LastName",
-                                                                        "Gendor", "DateOfBirth", "Nationality", "Phone", "Email");
+                                "GendorCaption", "DateOfBirth", "Nationality", "Phone", "Email");
 
             dgvListPeople.DataSource = _dtPeople;
             cbFilterBy.SelectedIndex = 0;

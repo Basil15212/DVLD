@@ -350,9 +350,10 @@ namespace DLVDData_Access
             SqlConnection connection = new SqlConnection(clsDataSittings.ConnectionString);
 
             string query =
-              @"SELECT People.PersonID, People.NationalNo,
+
+                @"SELECT People.PersonID, People.NationalNo,
               People.FirstName, People.SecondName, People.ThirdName, People.LastName,
-			  People.DateOfBirth, People.Gendor,  
+			  People.DateOfBirth,  
 				  CASE
                   WHEN People.Gendor = 0 THEN 'Male'
 
@@ -360,10 +361,24 @@ namespace DLVDData_Access
 
                   END as GendorCaption ,
 			  People.Address, People.Phone, People.Email, 
-              People.NationalityCountryID, Countries.CountryName, People.ImagePath
+               Countries.CountryName as Nationality, People.ImagePath
               FROM            People INNER JOIN
                          Countries ON People.NationalityCountryID = Countries.CountryID
                 ORDER BY People.FirstName";
+     //         @"SELECT People.PersonID, People.NationalNo,
+     //         People.FirstName, People.SecondName, People.ThirdName, People.LastName,
+     //People.DateOfBirth, People.Gendor,  
+     // CASE
+     //             WHEN People.Gendor = 0 THEN 'Male'
+
+            //             ELSE 'Female'
+
+            //             END as GendorCaption ,
+            //People.Address, People.Phone, People.Email, 
+            //         People.NationalityCountryID, Countries.CountryName, People.ImagePath
+            //         FROM            People INNER JOIN
+            //                    Countries ON People.NationalityCountryID = Countries.CountryID
+            //           ORDER BY People.FirstName";
 
 
 

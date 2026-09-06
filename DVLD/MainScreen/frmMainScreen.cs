@@ -23,11 +23,11 @@ namespace DVLD_WithoutUC
             InitializeComponent();
             _FrmLogin = frmLogin;
         }
-        public frmMainScreen()
-        {
-            InitializeComponent();
-           // _FrmLogin = frmLogin;
-        }
+        //public frmMainScreen()
+        //{
+        //    InitializeComponent();
+        //   // _FrmLogin = frmLogin;
+        //}
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
         {
