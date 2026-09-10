@@ -46,18 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aplications\frmEditApplicatioinType.cs">
+    <Compile Include="Aplications\Application Types\frmEditApplicatioinType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aplications\frmEditApplicatioinType.Designer.cs">
+    <Compile Include="Aplications\Application Types\frmEditApplicatioinType.Designer.cs">
       <DependentUpon>frmEditApplicatioinType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aplications\frmManageAplicationTypes.cs">
+    <Compile Include="Aplications\Application Types\frmManageAplicationTypes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aplications\frmManageAplicationTypes.Designer.cs">
+    <Compile Include="Aplications\Application Types\frmManageAplicationTypes.Designer.cs">
       <DependentUpon>frmManageAplicationTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.Designer.cs">
+      <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsFormat.cs" />
     <Compile Include="clsGlobal.cs" />
     <Compile Include="clsUtil.cs" />
     <Compile Include="clsValidatoin.cs" />
@@ -159,11 +166,14 @@
     <Compile Include="Users\frmUserInfo.Designer.cs">
       <DependentUpon>frmUserInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Aplications\frmEditApplicatioinType.resx">
+    <EmbeddedResource Include="Aplications\Application Types\frmEditApplicatioinType.resx">
       <DependentUpon>frmEditApplicatioinType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aplications\frmManageAplicationTypes.resx">
+    <EmbeddedResource Include="Aplications\Application Types\frmManageAplicationTypes.resx">
       <DependentUpon>frmManageAplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.resx">
+      <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
