@@ -3,19 +3,20 @@
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\local driving license application\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\local driving license application\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa12176.16343.rartemp\\frmAddUpdateLocalDrivingLicesnseApplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\local driving license application\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\local driving license application\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T01:07:19.348Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -58,38 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmAddUpdateLocalDrivingLicesnseApplication.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa12176.16343.rartemp\\frmAddUpdateLocalDrivingLicesnseApplication.cs",
-              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa12176.16343.rartemp\\frmAddUpdateLocalDrivingLicesnseApplication.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAG0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T00:18:47.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs",
               "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "RelativeDocumentMoniker": "Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs*",
               "RelativeToolTip": "Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAewNEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T00:07:59.445Z",
+              "WhenOpened": "2026-09-14T23:40:22.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs [Design]",
               "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "RelativeDocumentMoniker": "Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs [Design]*",
               "RelativeToolTip": "Aplications\\Local Driving License Application\\frmAddUpdateLocalDrivingLicenseApplication.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T23:53:40.185Z",
+              "WhenOpened": "2026-09-14T23:40:20.295Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMainScreen.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeToolTip": "MainScreen\\frmMainScreen.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwGMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T23:29:55.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMainScreen.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs [Design]",
+              "RelativeToolTip": "MainScreen\\frmMainScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T23:29:45.849Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -1,6 +1,7 @@
 ﻿using DVLD_Buessness.People;
 //using DVLD_Buessness.Users;
 using DVLD_WithoutUC.Aplications;
+using DVLD_WithoutUC.Aplications.Local_Driving_License_Application;
 using DVLD_WithoutUC.TestT_ypes;
 using DVLD_WithoutUC.Users;
 using System;
@@ -90,6 +91,12 @@ namespace DVLD_WithoutUC
         private void manageAplicatonTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmManageAplicationTypes frm =new frmManageAplicationTypes();
+            frm.ShowDialog();
+        }
+
+        private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication();
             frm.ShowDialog();
         }
     }

@@ -44,6 +44,7 @@
     <Compile Include="Applocations\General Application\clsApplication.cs" />
     <Compile Include="Applocations\clsApplicationType.cs" />
     <Compile Include="Applocations\LocalDrivingLicenseApp\clsLocalDrivingLicenseApplication.cs" />
+    <Compile Include="License Classes\clsLicenseClass.cs" />
     <Compile Include="People&amp;Countries\clsCountry.cs" />
     <Compile Include="People&amp;Countries\clsPerson.cs" />
     <Compile Include="Test Types\clsTestType.cs" />
