@@ -59,9 +59,11 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
                 this.Text = "New Local Driving License Application";
                 _LocalDrivingLicenseApplication =new clsLocalDrivingLicenseApplication();
                 ctrlPersonCardWithFilter1.FilterFocus();
+                cbLicenseClass.SelectedIndex = 2;
                 btnNext.Enabled = (tbAppInfo.Enabled);
                 btnSave.Enabled = (btnNext.Enabled);
                 tbAppInfo.Enabled = false;
+
 
                 lblFees.Text = clsApplicationType.Find(
                     (int)clsApplication.enApplicationType.NewDrivingLicense).Fees.ToString();

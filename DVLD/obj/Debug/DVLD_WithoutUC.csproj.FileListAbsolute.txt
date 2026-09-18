@@ -40,6 +40,8 @@ D:\My Ripo\DVLD\bin\Debug\DLVDData_Access.pdb
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.AssemblyReference.cache
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.frmEditApplicatioinType.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.frmManageAplicationTypes.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Controls.clsApplicationBasicInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls.ctrlDrivingLicenseApplicationInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmAddUpdateLocalDrivingLicenseApplication.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.ctrlPersonCard.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.frmMainScreen.resources

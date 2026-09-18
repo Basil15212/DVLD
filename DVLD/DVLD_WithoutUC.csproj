@@ -58,16 +58,34 @@
     <Compile Include="Aplications\Application Types\frmManageAplicationTypes.Designer.cs">
       <DependentUpon>frmManageAplicationTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\Controls\clsApplicationBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Aplications\Controls\clsApplicationBasicInfo.Designer.cs">
+      <DependentUpon>clsApplicationBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aplications\Local Driving License Application\Controls\ctrlDrivingLicenseApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Aplications\Local Driving License Application\Controls\ctrlDrivingLicenseApplicationInfo.Designer.cs">
+      <DependentUpon>ctrlDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="clsFormat.cs" />
-    <Compile Include="clsGlobal.cs" />
-    <Compile Include="clsUtil.cs" />
-    <Compile Include="clsValidatoin.cs" />
+    <Compile Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.Designer.cs">
+      <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\clsFormat.cs" />
+    <Compile Include="Global\clsGlobal.cs" />
+    <Compile Include="Global\clsUtil.cs" />
+    <Compile Include="Global\clsValidatoin.cs" />
     <Compile Include="People\Controls\ctrlPersonCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,8 +190,17 @@
     <EmbeddedResource Include="Aplications\Application Types\frmManageAplicationTypes.resx">
       <DependentUpon>frmManageAplicationTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Controls\clsApplicationBasicInfo.resx">
+      <DependentUpon>clsApplicationBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Local Driving License Application\Controls\ctrlDrivingLicenseApplicationInfo.resx">
+      <DependentUpon>ctrlDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Local Driving License Application\frmAddUpdateLocalDrivingLicenseApplication.resx">
       <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.resx">
+      <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
@@ -258,5 +285,6 @@
       <Name>DVLDBussnessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
