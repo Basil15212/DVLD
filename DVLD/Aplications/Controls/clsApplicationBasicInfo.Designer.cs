@@ -70,7 +70,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(0, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(734, 218);
+            this.groupBox2.Size = new System.Drawing.Size(780, 218);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Application Basic Info";
@@ -78,7 +78,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(508, 182);
+            this.linkLabel2.Location = new System.Drawing.Point(567, 182);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(129, 20);
             this.linkLabel2.TabIndex = 8;
@@ -89,7 +89,7 @@
             // lblCreatedBy
             // 
             this.lblCreatedBy.AutoSize = true;
-            this.lblCreatedBy.Location = new System.Drawing.Point(508, 135);
+            this.lblCreatedBy.Location = new System.Drawing.Point(567, 135);
             this.lblCreatedBy.Name = "lblCreatedBy";
             this.lblCreatedBy.Size = new System.Drawing.Size(45, 20);
             this.lblCreatedBy.TabIndex = 15;
@@ -98,7 +98,7 @@
             // lblStatusDate
             // 
             this.lblStatusDate.AutoSize = true;
-            this.lblStatusDate.Location = new System.Drawing.Point(508, 102);
+            this.lblStatusDate.Location = new System.Drawing.Point(567, 102);
             this.lblStatusDate.Name = "lblStatusDate";
             this.lblStatusDate.Size = new System.Drawing.Size(45, 20);
             this.lblStatusDate.TabIndex = 14;
@@ -107,7 +107,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(508, 70);
+            this.lblDate.Location = new System.Drawing.Point(567, 70);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(45, 20);
             this.lblDate.TabIndex = 13;
@@ -116,7 +116,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(375, 135);
+            this.label11.Location = new System.Drawing.Point(434, 135);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 20);
             this.label11.TabIndex = 12;
@@ -125,7 +125,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(368, 102);
+            this.label10.Location = new System.Drawing.Point(427, 102);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 20);
             this.label10.TabIndex = 11;
@@ -134,7 +134,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(419, 70);
+            this.label9.Location = new System.Drawing.Point(478, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 20);
             this.label9.TabIndex = 10;
@@ -236,7 +236,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Name = "clsApplicationBasicInfo";
-            this.Size = new System.Drawing.Size(742, 228);
+            this.Size = new System.Drawing.Size(788, 228);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);

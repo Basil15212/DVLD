@@ -36,12 +36,12 @@
             // 
             this.ctrlDrivingLicenseApplicationInfo1.Location = new System.Drawing.Point(12, 12);
             this.ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
-            this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(746, 364);
+            this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(794, 364);
             this.ctrlDrivingLicenseApplicationInfo1.TabIndex = 0;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(638, 382);
+            this.btnClose.Location = new System.Drawing.Point(402, 379);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(97, 34);
             this.btnClose.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 425);
+            this.ClientSize = new System.Drawing.Size(818, 425);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ctrlDrivingLicenseApplicationInfo1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

@@ -24,6 +24,7 @@ namespace DLVDData_Access.Local_Driving_License
             cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
             try
             {
+                con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 if(reader.Read())
                 {

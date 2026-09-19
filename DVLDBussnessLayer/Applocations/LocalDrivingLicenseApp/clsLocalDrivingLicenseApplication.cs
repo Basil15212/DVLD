@@ -1,6 +1,7 @@
 ﻿using DLVDData_Access.Local_Driving_License;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,7 +53,10 @@ namespace DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp
 
         }
 
-
+        public static DataTable GetAllLocalDrivingLicenseApplications()
+        {
+            return clsLocalDrivingLicenseApplicationData.GetAllLocalDrivingLicensApplications();
+        }
         private bool _AddNewLocalDrivingLicenseApplication()
         {
             this.LocalDrivingLicenseApplicationID = clsLocalDrivingLicenseApplicationData.AddNewLocalDrivingLicenseApplication

@@ -58,8 +58,8 @@ namespace DLVDData_Access.License_Classes
                     isfound = true;
                     ClassName = (string)reader["ClassName"];
                     ClassDescription = (string)reader["ClassDescription"];
-                    MinimumAllowedAge = (short)reader["MinimumAllowedAge"];
-                    DefaultValidityLength = (short)reader["DefaultValidityLength"];
+                    MinimumAllowedAge = (byte)reader["MinimumAllowedAge"];
+                    DefaultValidityLength = (byte)reader["DefaultValidityLength"];
                     ClassFees = (decimal)reader["ClassFees"];
                 }
                 reader.Close();
