@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 {
@@ -19,6 +20,7 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         public frmListLocalDrivingLicenseApplications()
         {
             InitializeComponent();
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Tag = "";
         }
 
         private void frmListLocalDrivingLicenseApplications_Load(object sender, EventArgs e)
@@ -188,7 +190,8 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
         private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show("This Featuer Is Not Ready Yet. Dont forget to change the tag later", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -199,6 +202,126 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+        private bool _CanIssueDRivingLicense()
+        {
+            return (((int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value == 3) && 
+                (issueDrivingLicenseFirstTimeToolStripMenuItem.Tag.ToString() == "The license has not been issued yet."));
+        }
+        private void _ManageNewStatusApp()
+        {
+            showApplicationDetailsToolStripMenuItem.Enabled = true;
+            deleteApplicationToolStripMenuItem.Enabled = true;
+            editApplicationToolStripMenuItem.Enabled = true;
+            cancelApplicationToolStripMenuItem.Enabled = true;
+            sechduleTestsToolStripMenuItem.Enabled = true;
+
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
+
+            showLicenseToolStripMenuItem.Enabled = false;
+            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+            
+        }
+        private void _ManageCompletedStatusApp()
+        {
+
+            deleteApplicationToolStripMenuItem.Enabled = false;
+            editApplicationToolStripMenuItem.Enabled = false;
+            cancelApplicationToolStripMenuItem.Enabled = false;
+            sechduleTestsToolStripMenuItem.Enabled = false;
+
+
+            //see if passed all tests
+            // dont foret to change the tag after u finish this
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
+            showApplicationDetailsToolStripMenuItem.Enabled = true;
+            showPersonLicenseHistoryToolStripMenuItem.Enabled = true;
+
+            
+
+        }
+
+        private void _ManageCancelledStatusApp()
+        {
+            showApplicationDetailsToolStripMenuItem.Enabled = true;
+            deleteApplicationToolStripMenuItem.Enabled = true;
+
+
+            editApplicationToolStripMenuItem.Enabled = false;
+            cancelApplicationToolStripMenuItem.Enabled = false;
+            sechduleTestsToolStripMenuItem.Enabled = false;
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
+            showLicenseToolStripMenuItem.Enabled = false;
+            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+        }
+
+        private void _ResetMenueItems()
+        {
+            showApplicationDetailsToolStripMenuItem.Enabled = false;
+            deleteApplicationToolStripMenuItem.Enabled = false;
+
+
+            editApplicationToolStripMenuItem.Enabled = false;
+            cancelApplicationToolStripMenuItem.Enabled = false;
+            sechduleTestsToolStripMenuItem.Enabled = false;
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
+            showLicenseToolStripMenuItem.Enabled = false;
+            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+        }
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            if (dgvLocalLicenseApps.CurrentRow == null)
+            {
+                e.Cancel = true;
+                return;
+            }
+
+            DataGridViewRow CurrentRow = dgvLocalLicenseApps.CurrentRow;
+            string status = dgvLocalLicenseApps.CurrentRow.Cells["Status"].Value.ToString();
+            
+
+            _ResetMenueItems();
+
+            switch (status)
+            {
+                case "New":
+                    //Methoud
+                    _ManageNewStatusApp();
+                    break;
+                case "Completed":
+                    //Methoud
+                    _ManageCompletedStatusApp();
+                    break;
+                case "Cancelled":
+                    //Methoud
+                    _ManageCancelledStatusApp();
+                    break;
+            }
+        }
+
+
+        // sechdule Tests Click Openning 
+        private void sechduToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+
+            int PassedTests = (int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value;
+            sechduleStreetTestToolStripMenuItem.Enabled = false;
+            sechduleWrittenTestToolStripMenuItem.Enabled = false;
+            sechduVisionTestToolStripMenuItem.Enabled = false;
+
+            switch(PassedTests)
+            {
+                case 2:
+                    sechduleStreetTestToolStripMenuItem.Enabled = true; break;
+                case 1:
+                    sechduleWrittenTestToolStripMenuItem.Enabled= true; break;
+                case 0:
+                    sechduVisionTestToolStripMenuItem.Enabled=true; break;
+                
+
+            }
         }
     }
 }
