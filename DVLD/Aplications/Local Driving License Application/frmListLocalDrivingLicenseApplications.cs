@@ -20,7 +20,7 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         public frmListLocalDrivingLicenseApplications()
         {
             InitializeComponent();
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Tag = "";
+            //issueDrivingLicenseFirstTimeToolStripMenuItem.Tag = "";
         }
 
         private void frmListLocalDrivingLicenseApplications_Load(object sender, EventArgs e)
@@ -205,100 +205,141 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         }
 
 
-        private bool _CanIssueDRivingLicense()
-        {
-            return (((int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value == 3) && 
-                (issueDrivingLicenseFirstTimeToolStripMenuItem.Tag.ToString() == "The license has not been issued yet."));
-        }
-        private void _ManageNewStatusApp()
-        {
-            showApplicationDetailsToolStripMenuItem.Enabled = true;
-            deleteApplicationToolStripMenuItem.Enabled = true;
-            editApplicationToolStripMenuItem.Enabled = true;
-            cancelApplicationToolStripMenuItem.Enabled = true;
-            sechduleTestsToolStripMenuItem.Enabled = true;
+        //private bool _CanIssueDRivingLicense()
+        //{
+        //    return (((int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value == 3) && 
+        //        (issueDrivingLicenseFirstTimeToolStripMenuItem.Tag.ToString() == "The license has not been issued yet."));
+        //}
+        //private void _ManageNewStatusApp()
+        //{
+        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
+        //    deleteApplicationToolStripMenuItem.Enabled = true;
+        //    editApplicationToolStripMenuItem.Enabled = true;
+        //    cancelApplicationToolStripMenuItem.Enabled = true;
+        //    sechduleTestsToolStripMenuItem.Enabled = true;
 
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
+        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
 
-            showLicenseToolStripMenuItem.Enabled = false;
-            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+        //    showLicenseToolStripMenuItem.Enabled = false;
+        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
             
-        }
-        private void _ManageCompletedStatusApp()
-        {
+        //}
+        //private void _ManageCompletedStatusApp()
+        //{
 
-            deleteApplicationToolStripMenuItem.Enabled = false;
-            editApplicationToolStripMenuItem.Enabled = false;
-            cancelApplicationToolStripMenuItem.Enabled = false;
-            sechduleTestsToolStripMenuItem.Enabled = false;
+        //    deleteApplicationToolStripMenuItem.Enabled = false;
+        //    editApplicationToolStripMenuItem.Enabled = false;
+        //    cancelApplicationToolStripMenuItem.Enabled = false;
+        //    sechduleTestsToolStripMenuItem.Enabled = false;
 
 
-            //see if passed all tests
-            // dont foret to change the tag after u finish this
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
-            showApplicationDetailsToolStripMenuItem.Enabled = true;
-            showPersonLicenseHistoryToolStripMenuItem.Enabled = true;
+        //    //see if passed all tests
+        //    // dont foret to change the tag after u finish this
+        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
+        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
+        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = true;
 
             
 
-        }
+        //}
 
-        private void _ManageCancelledStatusApp()
-        {
-            showApplicationDetailsToolStripMenuItem.Enabled = true;
-            deleteApplicationToolStripMenuItem.Enabled = true;
-
-
-            editApplicationToolStripMenuItem.Enabled = false;
-            cancelApplicationToolStripMenuItem.Enabled = false;
-            sechduleTestsToolStripMenuItem.Enabled = false;
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
-            showLicenseToolStripMenuItem.Enabled = false;
-            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
-        }
-
-        private void _ResetMenueItems()
-        {
-            showApplicationDetailsToolStripMenuItem.Enabled = false;
-            deleteApplicationToolStripMenuItem.Enabled = false;
+        //private void _ManageCancelledStatusApp()
+        //{
+        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
+        //    deleteApplicationToolStripMenuItem.Enabled = true;
 
 
-            editApplicationToolStripMenuItem.Enabled = false;
-            cancelApplicationToolStripMenuItem.Enabled = false;
-            sechduleTestsToolStripMenuItem.Enabled = false;
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
-            showLicenseToolStripMenuItem.Enabled = false;
-            showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
-        }
+        //    editApplicationToolStripMenuItem.Enabled = false;
+        //    cancelApplicationToolStripMenuItem.Enabled = false;
+        //    sechduleTestsToolStripMenuItem.Enabled = false;
+        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
+        //    showLicenseToolStripMenuItem.Enabled = false;
+        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+        //}
+
+        //private void _ResetMenueItems()
+        //{
+        //    showApplicationDetailsToolStripMenuItem.Enabled = false;
+        //    deleteApplicationToolStripMenuItem.Enabled = false;
+
+
+        //    editApplicationToolStripMenuItem.Enabled = false;
+        //    cancelApplicationToolStripMenuItem.Enabled = false;
+        //    sechduleTestsToolStripMenuItem.Enabled = false;
+        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
+        //    showLicenseToolStripMenuItem.Enabled = false;
+        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
+        //}
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
-            if (dgvLocalLicenseApps.CurrentRow == null)
+
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+
+            clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication =
+                clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+
+            int TotalPassedTests = (int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value;
+            //bool LicenseExist = LocalDrivingLicenseApplication.IsLicenseIssued();  //dont forget!!!
+
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && false; //thise false must be (LicenseExist)
+
+            showLicenseToolStripMenuItem.Enabled = false;  //thise false must be (LicenseExist)
+
+            editApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
+
+
+            sechduleTestsToolStripMenuItem.Enabled = !false;
+
+            cancelApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
+
+            deleteApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
+
+
+
+            //LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.VisionTest); //the sol
+            bool PassedVisionTest = false;
+            bool PassedWrittenTest =  false;
+            bool PAssedStreetTest = false;
+
+            sechduleTestsToolStripMenuItem.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PAssedStreetTest ) &&
+                (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
+
+            if(sechduleTestsToolStripMenuItem.Enabled)
             {
-                e.Cancel = true;
-                return;
+                sechduVisionTestToolStripMenuItem.Enabled = !PassedVisionTest;
+
+                sechduleWrittenTestToolStripMenuItem.Enabled = !PassedWrittenTest;
+
+                sechduleStreetTestToolStripMenuItem.Enabled = !PAssedStreetTest;
             }
 
-            DataGridViewRow CurrentRow = dgvLocalLicenseApps.CurrentRow;
-            string status = dgvLocalLicenseApps.CurrentRow.Cells["Status"].Value.ToString();
-            
+            //if (dgvLocalLicenseApps.CurrentRow == null)
+            //{
+            //    e.Cancel = true;
+            //    return;
+            //}
 
-            _ResetMenueItems();
+            //DataGridViewRow CurrentRow = dgvLocalLicenseApps.CurrentRow;
+            //string status = dgvLocalLicenseApps.CurrentRow.Cells["Status"].Value.ToString();
 
-            switch (status)
-            {
-                case "New":
-                    //Methoud
-                    _ManageNewStatusApp();
-                    break;
-                case "Completed":
-                    //Methoud
-                    _ManageCompletedStatusApp();
-                    break;
-                case "Cancelled":
-                    //Methoud
-                    _ManageCancelledStatusApp();
-                    break;
-            }
+
+            //_ResetMenueItems();
+
+            //switch (status)
+            //{
+            //    case "New":
+            //        //Methoud
+            //        _ManageNewStatusApp();
+            //        break;
+            //    case "Completed":
+            //        //Methoud
+            //        _ManageCompletedStatusApp();
+            //        break;
+            //    case "Cancelled":
+            //        //Methoud
+            //        _ManageCancelledStatusApp();
+            //        break;
+            //}
         }
 
 

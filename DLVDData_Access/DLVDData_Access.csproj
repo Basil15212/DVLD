@@ -48,7 +48,8 @@
     <Compile Include="People&amp;Countries\clsCountryData.cs" />
     <Compile Include="Global\clsDataSittings.cs" />
     <Compile Include="People&amp;Countries\clsPersonData.cs" />
-    <Compile Include="TestTypes\clsTestTypeData.cs" />
+    <Compile Include="Tests_ForLicense\Test_Appointment\clsTestAppointmentData.cs" />
+    <Compile Include="Tests_ForLicense\TestTypes\clsTestTypeData.cs" />
     <Compile Include="Users\clsUserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
