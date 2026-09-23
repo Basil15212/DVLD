@@ -166,6 +166,119 @@ namespace DLVDData_Access.Local_Driving_License
 
         //Some Methouds Wiil Be Added Later on 
 
+        public static bool DoesPassTestType( int LocalDrivingLicenseID ,int TestTypeID)
+        {
+            bool result = false;
+            SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
+            string query = @"Select top 1 Tests.TestResult from LocalDrivingLicenseApplications
+                            join TestAppointments on TestAppointments.LocalDrivingLicenseApplicationID =
+                            LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID
+                            join Tests on Tests.TestAppointmentID =TestAppointments.TestAppointmentID
+                            where LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID =
+                            @LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID
+                            and TestAppointments.TestTypeID =@TestAppointments.TestTypeID
+                            order by TestAppointments.TestAppointmentID desc";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@TestAppointments.TestTypeID", TestTypeID);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
+
+            try
+            {
+                con.Open();
+                Object Result = cmd.ExecuteScalar();
+                if(Result!=null && bool.TryParse(Result.ToString(),out bool NewResult))
+                    result = NewResult;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); return false; }
+            finally { con.Close(); }
+            return result;
+        }
+
+        public static bool DoesAttendedTest(int LocalDrivingLicenseID ,int TestTypeID)
+        {
+            bool isFound = false;
+            SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
+            string query = @"select top 1 found =1 
+                            from LocalDrivingLicenseApplications 
+                             join TestAppointments on  
+                            LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
+                            join Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            WHERE
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)
+                            and (TestAppointments.TestTypeID = @TestTypeID)
+                            order by TestAppointments.TestAppointmentID desc";
+            SqlCommand cmd = new SqlCommand(query,con);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
+            cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+            try
+            {
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                    isFound = true;
+            }
+            catch(Exception ex) { Console.WriteLine(ex.Message);}
+            finally { con.Close(); }
+            return isFound;
+        }
+        public static byte TotalTrialsPerTest(int LocalDrivingLicenseID, int TestTypeID)
+        {
+            byte TotalTrialsPerTest = 0;
+
+            SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
+            string query = @"select TotalTrial = Count(Tests.TestID)
+                            from LocalDrivingLicenseApplications join TestAppointments on 
+                            LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
+                            join Tests on 
+                            TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                            where (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)
+                            and (TestAppointments.TestTypeID = @TestTypeID)";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
+            cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+            try
+            {
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null && byte.TryParse(result.ToString(), out byte Count))
+                    TotalTrialsPerTest = Count;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            finally { con.Close(); }
+            return TotalTrialsPerTest;
+        }
+
+        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseID, int TestTypeID)
+        {
+            bool isFound = false;
+            SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
+            string query = @"select top 1 found =1 from 
+                            LocalDrivingLicenseApplications join TestAppointments on
+                            LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
+                            where
+                            (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)
+                            and (TestAppointments.TestTypeID = @TestTypeID) and isLocked =0
+                            ORDER BY TestAppointments.TestAppointmentID desc";
+            SqlCommand cmd = new SqlCommand(@query, con);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
+            cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+
+            try
+            {
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                    isFound = true;
+            }
+            catch { isFound = false; }
+            finally { con.Close(); }
+            return isFound;
+
+        }
+
+
 
     }
 }

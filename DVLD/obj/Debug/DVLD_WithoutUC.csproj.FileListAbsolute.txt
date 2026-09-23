@@ -67,3 +67,4 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.exe
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmListLocalDrivingLicenseApplications.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmLocalDrivingLicenseApplicationInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.Controls.ctrlScheduleTest.resources
