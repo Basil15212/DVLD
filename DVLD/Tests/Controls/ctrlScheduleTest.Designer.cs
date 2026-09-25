@@ -78,6 +78,7 @@
             this.gbTestType.TabIndex = 0;
             this.gbTestType.TabStop = false;
             this.gbTestType.Text = "Test Type";
+            
             // 
             // btnSave
             // 
@@ -87,6 +88,7 @@
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dtpDate
             // 
