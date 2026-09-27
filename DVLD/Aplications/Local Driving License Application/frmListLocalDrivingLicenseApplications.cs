@@ -1,4 +1,6 @@
-﻿using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
+﻿using DVLD_WithoutUC.Tests;
+using DVLDBussnessLayer;
+using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -175,17 +177,31 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
         private void sechduToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, clsTestType.enTestType.VisionTest);
+            frm.ShowDialog();
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+
         }
 
         private void sechduleWrittenTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, clsTestType.enTestType.WrittenTest);
+            frm.ShowDialog();
+            frmListLocalDrivingLicenseApplications_Load(null, null);
         }
 
         private void sechduleStreetTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //   MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, clsTestType.enTestType.StreetTest);
+            frm.ShowDialog();
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+
         }
 
         private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)

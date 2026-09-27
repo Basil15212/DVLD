@@ -49,7 +49,7 @@ namespace DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp
             this.CreatedByUserID = CreatedByUserID;
             this.LicenseClassID = LicenseClassID;
             //this will bedone when finish the LicenseClass Part
-            //this.LicenseClassInfo = clsLicenseClass.Find(LicenseClassID);
+            this.LicenseClassInfo = clsLicenseClass.Find(LicenseClassID);
             Mode = enMode.Update;
 
         }

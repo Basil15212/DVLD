@@ -78,7 +78,7 @@
             this.gbTestType.TabIndex = 0;
             this.gbTestType.TabStop = false;
             this.gbTestType.Text = "Test Type";
-            
+            this.gbTestType.Enter += new System.EventHandler(this.gbTestType_Enter);
             // 
             // btnSave
             // 

@@ -34,7 +34,7 @@ namespace DVLD_WithoutUC.Tests.Controls
             set
             {
                 _TestTypeID = value;
-                switch(TestTypeID)
+                switch(_TestTypeID)
                 {
                     case clsTestType.enTestType.VisionTest:
                         {
@@ -292,6 +292,11 @@ namespace DVLD_WithoutUC.Tests.Controls
             {
                 MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void gbTestType_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
