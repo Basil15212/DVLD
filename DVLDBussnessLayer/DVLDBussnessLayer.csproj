@@ -49,6 +49,7 @@
     <Compile Include="People&amp;Countries\clsPerson.cs" />
     <Compile Include="Test_For_License\Test Types\clsTestType.cs" />
     <Compile Include="Test_For_License\TestAppointments\clsTestAppointment.cs" />
+    <Compile Include="Test_For_License\Tests\clsTest.cs" />
     <Compile Include="User\clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

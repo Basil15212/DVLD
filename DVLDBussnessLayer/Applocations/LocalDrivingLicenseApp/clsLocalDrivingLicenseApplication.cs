@@ -1,5 +1,7 @@
 ﻿using DLVDData_Access.Local_Driving_License;
+using DLVDData_Access.Tests_ForLicense.Tests;
 using DVLDBussnessLayer.License_Classes;
+using DVLDBussnessLayer.Test_For_License.Tests;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -204,9 +206,30 @@ namespace DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp
 
         //Line 274
 
+        public clsTest GetLastTestPerTestType(clsTestType.enTestType TestTypeID)
+        {
+            return clsTest.FindLastTestPerPersonAndLicenseClass(this.ApplicantPersonID, this.LicenseClassID , TestTypeID);
+        }
 
+        public byte GetPassedTestCount()
+        {
+            return clsTest.GetPassedTestCount(this.LocalDrivingLicenseApplicationID);
+        }
 
+        public static byte GetPassedTestCount(int LocalDrivingLicenseApplicationID)
+        {
+            return clsTest.GetPassedTestCount(LocalDrivingLicenseApplicationID);
+        }
 
+        public bool PassedAllTests()
+        {
+            return clsTest.PassedAllTests(this.LocalDrivingLicenseApplicationID);
+        }
+        public static bool PassedAllTests(int LocalDrivingLicenseApplicationID)
+        {
+            return clsTest.PassedAllTests(LocalDrivingLicenseApplicationID);
+        }
+        // Line 300
 
     }
 }

@@ -11,7 +11,7 @@ namespace DLVDData_Access.Tests_ForLicense.Test_Appointment
     public class clsTestAppointmentData
     {
         public static bool GetTestAppointmentByID( int TestAppointmentID , ref int TestTypeID ,ref int LocalDrivingLicenseApplicationID,
-                    ref DateTime AppointmentDate ,ref float PaidFees ,ref int CreatedByUserID ,
+                    ref DateTime AppointmentDate ,ref double PaidFees ,ref int CreatedByUserID ,
                     ref bool IsLocked ,ref int RetakeTestApplicationID)
         {
             bool isFound = false;
@@ -31,7 +31,7 @@ namespace DLVDData_Access.Tests_ForLicense.Test_Appointment
                     TestTypeID = (int)reader["TestTypeID"];
                     LocalDrivingLicenseApplicationID = (int)reader["LocalDrivingLicenseApplicationID"];
                     AppointmentDate = (DateTime)reader["AppointmentDate"];
-                    PaidFees = (float)reader["PaidFees"];
+                    PaidFees = Convert.ToDouble(reader["PaidFees"]);
                     CreatedByUserID = (int)reader["CreatedByUserID"];
                     IsLocked = (bool)reader["IsLocked"];
                     if (reader["RetakeTestApplicationID"] == DBNull.Value)
@@ -126,6 +126,8 @@ namespace DLVDData_Access.Tests_ForLicense.Test_Appointment
                                 TestTypeID =@TestTypeID 
                                 order by AppointmentDate desc";
             SqlCommand cmd = new SqlCommand(query , con);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+            cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
 
             try
             {
@@ -142,11 +144,11 @@ namespace DLVDData_Access.Tests_ForLicense.Test_Appointment
         }
 
         public static int AddNewTestAppointment(int TestTypeID , int LocalDrivingLicenseApplicationID ,DateTime AppointmentDate ,
-                    float PaidFees ,int CreatedByUserID , bool IsLocked ,int RetakeTestApplicationID)
+                    double PaidFees ,int CreatedByUserID , bool IsLocked ,int RetakeTestApplicationID)
         {
             int TestAppointmentID = -1;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
-            string query = @"insert int  TestAppointments 
+            string query = @"insert into  TestAppointments 
                             (TestTypeID , LocalDrivingLicenseApplicationID,AppointmentDate,
                                 PaidFees ,CreatedByUserID, IsLocked, RetakeTestApplicationID)
                                 values
@@ -185,7 +187,7 @@ namespace DLVDData_Access.Tests_ForLicense.Test_Appointment
         }
 
         public static bool UpdateTestAppointment(int TestAppointmentID, int TestTypeID, int LocalDrivingLicenseApplicationID, DateTime AppointmentDate,
-                    float PaidFees, int CreatedByUserID, bool IsLocked, int RetakeTestApplicationID)
+                    double PaidFees, int CreatedByUserID, bool IsLocked, int RetakeTestApplicationID)
         {
             int affectedRws = 0;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);

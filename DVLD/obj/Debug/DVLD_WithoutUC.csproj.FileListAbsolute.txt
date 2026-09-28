@@ -1,35 +1,3 @@
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_WithoutUC.exe.config
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_WithoutUC.exe
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_WithoutUC.pdb
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_Buessness.dll
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_DataAccess.dll
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_Buessness.pdb
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\bin\Debug\DVLD_DataAccess.pdb
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Aplications.frmEditApplicatioinType.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Aplications.frmManageAplicationTypes.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.ctrlPersonCard.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.frmMainScreen.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.People.Controls.ctrlPersonCardWithFilter.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.People.frmAddUpdatePerson.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.People.frmFindPerson.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_Buessness.People.frmListPeople.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.People.frmShowPersonInfo.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Properties.Resources.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_DataAccess.Text_Types.frmEditTestType.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.TestT_ypes.frmListTestTypes.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.test.frmAddPersonWithFilter.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.Controls.ctrlUserInfo.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.frmAddUpdateUSer.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.frmChangePassword.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.frmListUsers.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.frmLogin.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.Users.frmUserInfo.resources
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_Wit.33163A76.Up2Date
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.exe
-C:\Users\HP\Desktop\C#\Projects\DVLD_WithoutUC\obj\Debug\DVLD_WithoutUC.pdb
 D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.exe.config
 D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.exe
 D:\My Ripo\DVLD\bin\Debug\DVLD_WithoutUC.pdb
@@ -43,6 +11,8 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.frmManageAplicationTypes.re
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Controls.clsApplicationBasicInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls.ctrlDrivingLicenseApplicationInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmAddUpdateLocalDrivingLicenseApplication.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmListLocalDrivingLicenseApplications.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmLocalDrivingLicenseApplicationInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.ctrlPersonCard.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.frmMainScreen.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.Controls.ctrlPersonCardWithFilter.resources
@@ -51,6 +21,11 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.frmFindPerson.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_Buessness.People.frmListPeople.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.frmShowPersonInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Properties.Resources.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.Controls.ctrlSchedualedTest.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.Controls.ctrlScheduleTest.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.frmListTestAppointments.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.frmScheduleTest.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.frmTakeTest.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_DataAccess.Text_Types.frmEditTestType.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.TestT_ypes.frmListTestTypes.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.test.frmAddPersonWithFilter.resources
@@ -65,8 +40,3 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.CoreCompileInputs.cache
 D:\My Ripo\DVLD\obj\Debug\DVLD_Wit.33163A76.Up2Date
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.exe
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmListLocalDrivingLicenseApplications.resources
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmLocalDrivingLicenseApplicationInfo.resources
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.Controls.ctrlScheduleTest.resources
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.frmListTestAppointments.resources
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Tests.frmScheduleTest.resources

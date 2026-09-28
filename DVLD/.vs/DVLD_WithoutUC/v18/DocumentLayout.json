@@ -3,7 +3,16 @@
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}|..\\DLVDData_Access\\DLVDData_Access.csproj|d:\\my ripo\\dlvddata_access\\tests_forlicense\\tests\\clstestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\tests\\controls\\ctrlschedualedtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:tests\\controls\\ctrlschedualedtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:tests\\frmscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\people\\frmfindperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:people\\frmfindperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +43,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsTestData.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
-              "RelativeDocumentMoniker": "..\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
-              "ToolTip": "D:\\My Ripo\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
-              "RelativeToolTip": "..\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "Title": "ctrlSchedualedTest.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Tests\\Controls\\ctrlSchedualedTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Controls\\ctrlSchedualedTest.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Tests\\Controls\\ctrlSchedualedTest.cs [Design]",
+              "RelativeToolTip": "Tests\\Controls\\ctrlSchedualedTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T17:33:09.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T23:48:54.421Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmScheduleTest.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Tests\\frmScheduleTest.cs",
+              "RelativeDocumentMoniker": "Tests\\frmScheduleTest.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Tests\\frmScheduleTest.cs [Design]",
+              "RelativeToolTip": "Tests\\frmScheduleTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:48:47.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmFindPerson.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\People\\frmFindPerson.cs",
+              "RelativeDocumentMoniker": "People\\frmFindPerson.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\People\\frmFindPerson.cs [Design]",
+              "RelativeToolTip": "People\\frmFindPerson.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:48:43.004Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

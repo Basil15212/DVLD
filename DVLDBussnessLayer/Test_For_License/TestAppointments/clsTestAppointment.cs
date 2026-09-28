@@ -17,7 +17,7 @@ namespace DVLDBussnessLayer.Test_For_License.TestAppointments
         public clsTestType.enTestType  TestTypeID {  get; set; }
         public int LocalDrivingLicenseApplicationID {  get; set; }
         public DateTime AppointmentDate {  get; set; }
-        public float PaidFees {  get; set; }
+        public double PaidFees {  get; set; }
         public int CreatedByUserID {  get; set; }
         public bool IsLocked {  get; set; }
         public int RetakeTestApplicationID {  get; set; }
@@ -40,7 +40,7 @@ namespace DVLDBussnessLayer.Test_For_License.TestAppointments
 
         }
         public clsTestAppointment(int TestAppointmentID ,clsTestType.enTestType TestTypeID , int LocalDrivingLicenseApplicationID,
-               DateTime AppointmentDate ,float PaidFees ,int CreatedByUserID , bool IsLocked ,int RetakeTestApplicationID)
+               DateTime AppointmentDate ,double PaidFees ,int CreatedByUserID , bool IsLocked ,int RetakeTestApplicationID)
         {
             this.TestAppointmentID=TestAppointmentID;
             this.TestTypeID =TestTypeID;
@@ -88,7 +88,7 @@ namespace DVLDBussnessLayer.Test_For_License.TestAppointments
         public static clsTestAppointment Find(int TestAppointmentID)
         {
             int TestTypeID = 0; int LocalDringLicemseApplicationID = -1;
-            DateTime AppointmentDate = DateTime.Now; float PaidFees = 0; int CreatedByUserID = -1;
+            DateTime AppointmentDate = DateTime.Now; double PaidFees = 0; int CreatedByUserID = -1;
             bool IsLocked = false; int RetakeTestApplicationID = -1;
 
             if (clsTestAppointmentData.GetTestAppointmentByID(TestAppointmentID, ref TestTypeID, ref LocalDringLicemseApplicationID,

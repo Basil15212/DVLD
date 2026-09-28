@@ -116,7 +116,7 @@ namespace DLVDData_Access.Tests_ForLicense.Tests
             return dt;
         }
 
-        public static int AddNewTest(int TestID ,int TestAppointmentID ,bool TestResult, string Notes ,int CreatedByUserID)
+        public static int AddNewTest(int TestAppointmentID ,bool TestResult, string Notes ,int CreatedByUserID)
         {
             int ID = -1;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);

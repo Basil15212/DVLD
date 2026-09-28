@@ -1,6 +1,7 @@
 ﻿using DVLDBussnessLayer;
 using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
 using DVLDBussnessLayer.Test_For_License.TestAppointments;
+using DVLDBussnessLayer.Test_For_License.Tests;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,20 +58,34 @@ namespace DVLD_WithoutUC.Tests
         {
             _LoadTestTypeImageAndTitle();
             ctrlDrivingLicenseApplicationInfo1.LoadApplicationInfoByLocalDrivingAppID(_LocalDrivingLicenseApplicationID);
-            _dtLicenseTestAppointments = clsTestAppointment.GetApplicationTestAppointmentsPerTestType(_LocalDrivingLicenseApplicationID ,_TestType);
 
-            dgvTestAppointments.DataSource = _dtLicenseTestAppointments;
+
+            _dtLicenseTestAppointments = 
+                clsTestAppointment.GetApplicationTestAppointmentsPerTestType(_LocalDrivingLicenseApplicationID ,_TestType);
+
+            if( _dtLicenseTestAppointments == null || _dtLicenseTestAppointments.Rows.Count == 0)
+            {
+                MessageBox.Show("DataTable is Empty");
+                return;
+            }
+            else
+            {
+                dgvTestAppointments.DataSource = _dtLicenseTestAppointments;
+                
+            }
+
+
             lblRecords.Text =dgvTestAppointments.Rows.Count.ToString();
             if(dgvTestAppointments.Rows.Count >0)
             {
                 dgvTestAppointments.Columns[0].HeaderText = "Appointment ID";
-                dgvTestAppointments.Columns[0].Width = 150;
+                dgvTestAppointments.Columns[0].Width = 90;
                 dgvTestAppointments.Columns[1].HeaderText = "Appointment Date";
-                dgvTestAppointments.Columns[1].Width = 200;
+                dgvTestAppointments.Columns[1].Width = 120;
                 dgvTestAppointments.Columns[2].HeaderText = "Paid Fees";
-                dgvTestAppointments.Columns[2].Width = 150;
+                dgvTestAppointments.Columns[2].Width = 90;
                 dgvTestAppointments.Columns[3].HeaderText = "Is Locked";
-                dgvTestAppointments.Columns[3].Width = 100;
+                dgvTestAppointments.Columns[3].Width = 60;
 
             }
         }
@@ -87,6 +102,22 @@ namespace DVLD_WithoutUC.Tests
             //clsTest
             //Line 113
             //ShouldMakeTheTestClass ....
+
+            clsTest LastTest = LocalDrivingLicenseApplication.GetLastTestPerTestType(_TestType);
+            if(LastTest == null)
+            {
+                frmScheduleTest frm1 = new frmScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
+                frm1.ShowDialog();
+                frmListTestAppointments_Load(null, null);
+                return;
+
+            }
+            if(LastTest.TestResult == true)
+            {
+                MessageBox.Show("This person already passed this test before, you can only retake faild test",
+                    "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             //if no last Test
             frmScheduleTest frm = new frmScheduleTest(LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID,_TestType );
@@ -107,8 +138,18 @@ namespace DVLD_WithoutUC.Tests
 
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Will be finished Soon", ":)");
+            int TestAppointmentID = (int)dgvTestAppointments.CurrentRow.Cells[0].Value;
+            frmTakeTest frm = new frmTakeTest(TestAppointmentID, _TestType);
+            frm.ShowDialog();
+            frmListTestAppointments_Load(null, null);
+            return;
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmListTestAppointments_Load(null, null);
         }
     }
 }

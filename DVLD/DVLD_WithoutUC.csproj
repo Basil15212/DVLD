@@ -136,6 +136,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Controls\ctrlSchedualedTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tests\Controls\ctrlSchedualedTest.Designer.cs">
+      <DependentUpon>ctrlSchedualedTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Controls\ctrlScheduleTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +159,12 @@
     </Compile>
     <Compile Include="Tests\frmScheduleTest.Designer.cs">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.Designer.cs">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\TestT ypes\frmEditTestType.cs">
       <SubType>Form</SubType>
@@ -260,6 +272,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tests\Controls\ctrlSchedualedTest.resx">
+      <DependentUpon>ctrlSchedualedTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tests\Controls\ctrlScheduleTest.resx">
       <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\frmScheduleTest.resx">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmTakeTest.resx">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\TestT ypes\frmEditTestType.resx">
       <DependentUpon>frmEditTestType.cs</DependentUpon>
