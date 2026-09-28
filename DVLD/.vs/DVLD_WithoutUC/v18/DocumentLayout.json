@@ -1,7 +1,11 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}|..\\DLVDData_Access\\DLVDData_Access.csproj|d:\\my ripo\\dlvddata_access\\tests_forlicense\\tests\\clstestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +30,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsTestData.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
+              "RelativeDocumentMoniker": "..\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
+              "ToolTip": "D:\\My Ripo\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
+              "RelativeToolTip": "..\\DLVDData_Access\\Tests_ForLicense\\Tests\\clsTestData.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T17:33:09.126Z",
+              "EditorCaption": ""
             }
           ]
         }
