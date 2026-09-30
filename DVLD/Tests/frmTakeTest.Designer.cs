@@ -153,7 +153,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlSchedualedTest1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmTakeTest";
             this.Text = "Take Test";
             this.Load += new System.EventHandler(this.frmTakeTest_Load);

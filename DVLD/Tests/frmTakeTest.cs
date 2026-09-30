@@ -50,15 +50,13 @@ namespace DVLD_WithoutUC.Tests
                     else
                         rbFail.Checked = true;
                 }
-                else
-                {
-                    MessageBox.Show("Empty Test");
-                }
+                
 
                 txtNotes.Text = _Test.Notes;
                 lblUserMEssage.Visible= true;
                 rbFail.Enabled = false;
                 rbPass.Enabled = false;
+                btnSave.Enabled = false;
             }
             else
                 _Test = new clsTest();

@@ -119,7 +119,7 @@ namespace DVLD_WithoutUC.Tests.Controls
                     return;
             }
 
-            lblTotalFees.Text = ((Convert.ToString(lblRestakeAppFees.Text)) + (Convert.ToString(lblTestFees.Text))).ToString();
+            lblTotalFees.Text = ((Convert.ToInt32(lblRestakeAppFees.Text)) + (Convert.ToInt32(lblTestFees.Text))).ToString();
 
             if (!_HandleActiveTestAppointmentConstraint())
                 return;
@@ -160,7 +160,7 @@ namespace DVLD_WithoutUC.Tests.Controls
                 dtpDate.MinDate = DateTime.Now;
             else dtpDate.MinDate = _TestAppointment.AppointmentDate;
 
-            dtpDate.Value = _TestAppointment.AppointmentDate;
+           // dtpDate.Value = _TestAppointment.AppointmentDate;
 
             if(_TestAppointment.RetakeTestApplicationID == -1)
             {
@@ -287,6 +287,7 @@ namespace DVLD_WithoutUC.Tests.Controls
             {
                 _Mode = enMode.Update;
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnSave.Enabled = false;
             }
             else
             {

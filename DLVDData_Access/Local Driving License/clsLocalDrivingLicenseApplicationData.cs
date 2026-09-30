@@ -175,12 +175,12 @@ namespace DLVDData_Access.Local_Driving_License
                             LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID
                             join Tests on Tests.TestAppointmentID =TestAppointments.TestAppointmentID
                             where LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID =
-                            @LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID
-                            and TestAppointments.TestTypeID =@TestAppointments.TestTypeID
+                            @LocalDrivingLicenseApplicationID
+                            and TestAppointments.TestTypeID =@TestTypeID
                             order by TestAppointments.TestAppointmentID desc";
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@TestAppointments.TestTypeID", TestTypeID);
-            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
+            cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+            cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseID);
 
             try
             {

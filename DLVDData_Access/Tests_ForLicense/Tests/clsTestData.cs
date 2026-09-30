@@ -121,19 +121,22 @@ namespace DLVDData_Access.Tests_ForLicense.Tests
             int ID = -1;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
             string query = @"INSERT INTO Tests 
-                                 (TestAppointmentID),(TestResult),(Notes),(CreatedByUserID)
-                            Values
-                                  (@TestAppointmentID),(@TestResult),(@Notes),(@CreatedByUserID);
+                                 (TestAppointmentID,TestResult,Notes,CreatedByUserID)
+                                Values
+                                  (@TestAppointmentID,@TestResult,@Notes,@CreatedByUserID) ;
 
                                Update TestAppointments
-                                SET IsLocked=1
-                                where TestAppointmentID = @TestAppointmentID
+                                SET IsLocked = 1
+                                where TestAppointmentID = @TestAppointmentID;
+
                                     SELECT SCOPE_IDENTITY();";
+
+
             SqlCommand cmd =new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@TestAppointmentID", TestAppointmentID);
             cmd.Parameters.AddWithValue("@TestResult", TestResult);
-          
             cmd.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
+
             if(Notes != null && Notes != "")
             {
                 cmd.Parameters.AddWithValue("@Notes",Notes);
@@ -147,6 +150,7 @@ namespace DLVDData_Access.Tests_ForLicense.Tests
             {
                 con.Open();
                 object result = cmd.ExecuteScalar();
+
                 if (result != null && int.TryParse(result.ToString(), out int NewID))
                 {
                     ID = NewID;
