@@ -41,7 +41,7 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls
 
         public void LoadAppInfoByAppID(int AppID)
         {
-            _LocalDrivingLicenseApplication =clsLocalDrivingLicenseApplication.FindByApplicationID(AppID);
+            _LocalDrivingLicenseApplication =clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(AppID);
             if (_LocalDrivingLicenseApplication == null)
             {
                 _ResetLocalDrivingApplicationInfo();
@@ -54,13 +54,13 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls
 
         private void _FillLocalDrivingLicenseApplicationInfo()
         {
-            _LicenseID = 1000; //will be edited Later
+            _LicenseID = _LocalDrivingLicenseApplication.GetActiveLicenseID(); 
 
-            llShowLicenseInfo.Enabled = false; //will be Edited Later
+            llShowLicenseInfo.Enabled = (_LicenseID != -1); 
 
             lblDLAppID.Text =_LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
             lblAppliedForLicense.Text = clsLicenseClass.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName;
-            lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString(); //Will Be Edited Later
+            lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString(); 
             clsApplicationBasicInfo1.LoadApplicationInfo(_LocalDrivingLicenseApplication.ApplicationID);
 
         }
@@ -81,6 +81,11 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls
         {
             MessageBox.Show("will Be Finished soon " ,"information" , MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
+        }
+
+        private void ctrlDrivingLicenseApplicationInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

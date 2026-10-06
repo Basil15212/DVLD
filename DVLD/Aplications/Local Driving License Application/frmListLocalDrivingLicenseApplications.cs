@@ -1,4 +1,5 @@
-﻿using DVLD_WithoutUC.Tests;
+﻿using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
+using DVLD_WithoutUC.Tests;
 using DVLDBussnessLayer;
 using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
 using System;
@@ -206,8 +207,11 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
         private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            MessageBox.Show("This Featuer Is Not Ready Yet. Dont forget to change the tag later", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            frmIssueDriverLicenseFirstTime frm = new frmIssueDriverLicenseFirstTime(LocalDrivingLicenseApplicationID);
+            frm.ShowDialog();
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+            //MessageBox.Show("This Featuer Is Not Ready Yet. Dont forget to change the tag later", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -221,71 +225,7 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         }
 
 
-        //private bool _CanIssueDRivingLicense()
-        //{
-        //    return (((int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value == 3) && 
-        //        (issueDrivingLicenseFirstTimeToolStripMenuItem.Tag.ToString() == "The license has not been issued yet."));
-        //}
-        //private void _ManageNewStatusApp()
-        //{
-        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
-        //    deleteApplicationToolStripMenuItem.Enabled = true;
-        //    editApplicationToolStripMenuItem.Enabled = true;
-        //    cancelApplicationToolStripMenuItem.Enabled = true;
-        //    sechduleTestsToolStripMenuItem.Enabled = true;
 
-        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
-
-        //    showLicenseToolStripMenuItem.Enabled = false;
-        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
-            
-        //}
-        //private void _ManageCompletedStatusApp()
-        //{
-
-        //    deleteApplicationToolStripMenuItem.Enabled = false;
-        //    editApplicationToolStripMenuItem.Enabled = false;
-        //    cancelApplicationToolStripMenuItem.Enabled = false;
-        //    sechduleTestsToolStripMenuItem.Enabled = false;
-
-
-        //    //see if passed all tests
-        //    // dont foret to change the tag after u finish this
-        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = _CanIssueDRivingLicense();
-        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
-        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = true;
-
-            
-
-        //}
-
-        //private void _ManageCancelledStatusApp()
-        //{
-        //    showApplicationDetailsToolStripMenuItem.Enabled = true;
-        //    deleteApplicationToolStripMenuItem.Enabled = true;
-
-
-        //    editApplicationToolStripMenuItem.Enabled = false;
-        //    cancelApplicationToolStripMenuItem.Enabled = false;
-        //    sechduleTestsToolStripMenuItem.Enabled = false;
-        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
-        //    showLicenseToolStripMenuItem.Enabled = false;
-        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
-        //}
-
-        //private void _ResetMenueItems()
-        //{
-        //    showApplicationDetailsToolStripMenuItem.Enabled = false;
-        //    deleteApplicationToolStripMenuItem.Enabled = false;
-
-
-        //    editApplicationToolStripMenuItem.Enabled = false;
-        //    cancelApplicationToolStripMenuItem.Enabled = false;
-        //    sechduleTestsToolStripMenuItem.Enabled = false;
-        //    issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = false;
-        //    showLicenseToolStripMenuItem.Enabled = false;
-        //    showPersonLicenseHistoryToolStripMenuItem.Enabled = false;
-        //}
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
@@ -295,16 +235,16 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
                 clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
 
             int TotalPassedTests = (int)dgvLocalLicenseApps.CurrentRow.Cells[5].Value;
-            //bool LicenseExist = LocalDrivingLicenseApplication.IsLicenseIssued();  //dont forget!!!
+            bool LicenseExist = LocalDrivingLicenseApplication.IsLicenseIssued();
 
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && false; //thise false must be (LicenseExist)
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && !LicenseExist; //thise false must be (LicenseExist)
 
-            showLicenseToolStripMenuItem.Enabled = false;  //thise false must be (LicenseExist)
+            showLicenseToolStripMenuItem.Enabled = LicenseExist;  //thise false must be (LicenseExist)
 
             editApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
 
 
-            sechduleTestsToolStripMenuItem.Enabled = !false;
+            sechduleTestsToolStripMenuItem.Enabled = !LicenseExist;
 
             cancelApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
 
@@ -313,14 +253,14 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
 
             //LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.VisionTest); //the sol
-            bool PassedVisionTest = false;
-            bool PassedWrittenTest =  false;
-            bool PAssedStreetTest = false;
+            bool PassedVisionTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.VisionTest);
+            bool PassedWrittenTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.WrittenTest);
+            bool PAssedStreetTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTestType.StreetTest);
 
-            sechduleTestsToolStripMenuItem.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PAssedStreetTest ) &&
+            sechduleTestsToolStripMenuItem.Enabled = (!PassedVisionTest || !PassedWrittenTest || !PAssedStreetTest) &&
                 (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
 
-            if(sechduleTestsToolStripMenuItem.Enabled)
+            if (sechduleTestsToolStripMenuItem.Enabled)
             {
                 sechduVisionTestToolStripMenuItem.Enabled = !PassedVisionTest;
 
@@ -328,36 +268,9 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
                 sechduleStreetTestToolStripMenuItem.Enabled = !PAssedStreetTest;
             }
-
-            //if (dgvLocalLicenseApps.CurrentRow == null)
-            //{
-            //    e.Cancel = true;
-            //    return;
-            //}
-
-            //DataGridViewRow CurrentRow = dgvLocalLicenseApps.CurrentRow;
-            //string status = dgvLocalLicenseApps.CurrentRow.Cells["Status"].Value.ToString();
-
-
-            //_ResetMenueItems();
-
-            //switch (status)
-            //{
-            //    case "New":
-            //        //Methoud
-            //        _ManageNewStatusApp();
-            //        break;
-            //    case "Completed":
-            //        //Methoud
-            //        _ManageCompletedStatusApp();
-            //        break;
-            //    case "Cancelled":
-            //        //Methoud
-            //        _ManageCancelledStatusApp();
-            //        break;
-            //}
         }
 
+            
 
         // sechdule Tests Click Openning 
         private void sechduToolStripMenuItem_DropDownOpening(object sender, EventArgs e)

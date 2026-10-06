@@ -12,8 +12,7 @@ namespace DLVDData_Access.Local_Driving_License
 {
     public class clsLocalDrivingLicenseApplicationData
     {
-        public static bool GetLocalDrivingLicenseApplicationInfoByID
-            (int LocalDrivingLicenseApplicationID ,ref int ApplicationID ,ref int LicenseClassID)
+        public static bool GetLocalDrivingLicenseApplicationInfoByID(int LocalDrivingLicenseApplicationID ,ref int ApplicationID ,ref int LicenseClassID)
         {
             bool IsFound = false;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
@@ -45,20 +44,24 @@ namespace DLVDData_Access.Local_Driving_License
         {
             bool IsFound = false;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
-            string query = @"Select * from LocalDrivingLicenseApplications
-                                where
-                                ApplicationID =@ApplicationID";
+            string query = "SELECT * FROM LocalDrivingLicenseApplications WHERE ApplicationID = @ApplicationID";
             SqlCommand cmd = new SqlCommand(query, con );
             cmd.Parameters.AddWithValue("@ApplicationID" , ApplicationID);
 
+
             try
             {
+                con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     IsFound = true;
                     LocalDrivingLicenseApplicationID = (int)reader["LocalDrivingLicenseApplicationID"];
                     LicenseClassID = (int)reader["LicenseClassID"];
+                }
+                else
+                {
+                    IsFound = false;
                 }
                 reader.Close();
             }

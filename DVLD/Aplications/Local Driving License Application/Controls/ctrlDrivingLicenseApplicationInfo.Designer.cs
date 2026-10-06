@@ -137,6 +137,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "ctrlDrivingLicenseApplicationInfo";
             this.Size = new System.Drawing.Size(838, 364);
+            this.Load += new System.EventHandler(this.ctrlDrivingLicenseApplicationInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

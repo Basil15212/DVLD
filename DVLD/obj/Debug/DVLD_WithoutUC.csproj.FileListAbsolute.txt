@@ -13,6 +13,7 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Appli
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmAddUpdateLocalDrivingLicenseApplication.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmListLocalDrivingLicenseApplications.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmLocalDrivingLicenseApplicationInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.LocalDrivingLicense.frmIssueDriverLicenseFirstTime.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.ctrlPersonCard.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.frmMainScreen.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.People.Controls.ctrlPersonCardWithFilter.resources
