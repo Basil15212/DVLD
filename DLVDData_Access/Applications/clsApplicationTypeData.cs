@@ -54,7 +54,7 @@ namespace DLVDData_Access
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 isFound = false;
             }
             finally
@@ -94,7 +94,7 @@ namespace DLVDData_Access
 
             catch (Exception ex)
             {
-                // Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
             }
             finally
             {

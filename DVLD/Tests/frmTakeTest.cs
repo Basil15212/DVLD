@@ -26,6 +26,7 @@ namespace DVLD_WithoutUC.Tests
             InitializeComponent();
             _AppointmentID = AppointmentID;
             _TestType = TestTypeID;
+            _TestID = (int)_TestType;
         }
 
         private void frmTakeTest_Load(object sender, EventArgs e)

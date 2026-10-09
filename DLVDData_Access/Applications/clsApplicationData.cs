@@ -58,7 +58,7 @@ namespace DLVDData_Access
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 isFound = false;
             }
             finally
@@ -98,7 +98,7 @@ namespace DLVDData_Access
 
             catch (Exception ex)
             {
-                // Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
             }
             finally
             {
@@ -155,7 +155,7 @@ namespace DLVDData_Access
 
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
 
             }
 
@@ -207,7 +207,7 @@ namespace DLVDData_Access
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 return false;
             }
 
@@ -366,7 +366,7 @@ namespace DLVDData_Access
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 return ActiveApplicationID;
             }
             finally
@@ -404,7 +404,7 @@ namespace DLVDData_Access
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 return false;
             }
 

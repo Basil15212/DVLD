@@ -2,6 +2,7 @@
 using DVLD_WithoutUC.Tests;
 using DVLDBussnessLayer;
 using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
+using DVLDBussnessLayer.Licenses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -216,7 +217,22 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            int LicenseID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID
+                (LocalDrivingLicenseApplicationID).GetActiveLicenseID();
+            if(LicenseID != -1)
+            {
+                frmShoeDriverLicenseInfo frm = new frmShoeDriverLicenseInfo(LicenseID);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No License Found!", "No License", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+           // MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -239,7 +255,7 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
             issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && !LicenseExist; //thise false must be (LicenseExist)
 
-            showLicenseToolStripMenuItem.Enabled = LicenseExist;  //thise false must be (LicenseExist)
+            showLicenseToolStripMenuItem.Enabled = LicenseExist;  
 
             editApplicationToolStripMenuItem.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsLocalDrivingLicenseApplication.enApplicationStatus.New);
 

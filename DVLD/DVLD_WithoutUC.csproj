@@ -92,11 +92,29 @@
     <Compile Include="Global\clsGlobal.cs" />
     <Compile Include="Global\clsUtil.cs" />
     <Compile Include="Global\clsValidatoin.cs" />
+    <Compile Include="Licenses\LocalDrivingLicense\Controls\ctrlDriverLicenseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\LocalDrivingLicense\Controls\ctrlDriverLicenseInfo.Designer.cs">
+      <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\LocalDrivingLicense\Controls\ctrlDrivingLicenseInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\LocalDrivingLicense\Controls\ctrlDrivingLicenseInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlDrivingLicenseInfoWithFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\LocalDrivingLicense\frmIssueDriverLicenseFirstTime.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Licenses\LocalDrivingLicense\frmIssueDriverLicenseFirstTime.Designer.cs">
       <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\LocalDrivingLicense\frmShoeDriverLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\LocalDrivingLicense\frmShoeDriverLicenseInfo.Designer.cs">
+      <DependentUpon>frmShoeDriverLicenseInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="People\Controls\ctrlPersonCard.cs">
       <SubType>UserControl</SubType>
@@ -247,8 +265,17 @@
     <EmbeddedResource Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\LocalDrivingLicense\Controls\ctrlDriverLicenseInfo.resx">
+      <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\LocalDrivingLicense\Controls\ctrlDrivingLicenseInfoWithFilter.resx">
+      <DependentUpon>ctrlDrivingLicenseInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Licenses\LocalDrivingLicense\frmIssueDriverLicenseFirstTime.resx">
       <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\LocalDrivingLicense\frmShoeDriverLicenseInfo.resx">
+      <DependentUpon>frmShoeDriverLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
