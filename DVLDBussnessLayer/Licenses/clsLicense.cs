@@ -188,7 +188,45 @@ namespace DVLDBussnessLayer.Licenses
             }
         }
 
-        // Will complet after finishing Detaind and reNew 
+      
         //Line 204
+
+        //Line 249
+        public clsLicense RenewLicense(string Notes ,int CreatedUser)
+        {
+            clsApplication Application = new clsApplication();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplication.enApplicationType.RenewDrivingLicense;
+            Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationType.Find((int)clsApplication.enApplicationType.RenewDrivingLicense).Fees;
+            Application.CreatedByUserID = CreatedUser;
+
+            if (!Application.Save())
+                return null;
+            clsLicense NewLicense = new clsLicense();
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClass = this.LicenseClass;
+            NewLicense.IssueDate = this.IssueDate;
+
+            int DefaultValidityLength = this.LicenseClassInfo.DefaultValidityLength;
+            NewLicense.ExpirationDate = DateTime.Now.AddYears(DefaultValidityLength);
+            NewLicense.Notes = Notes;
+            NewLicense.PaidFees = this.LicenseClassInfo.ClassFees;
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = clsLicense.enIssueReason.Renew;
+            NewLicense.CreatedByUserID= CreatedUser;
+
+            if(!NewLicense.Save())
+            {
+                return null;
+            }
+
+            DeActivateCurrentLicense();
+            return NewLicense;
+        }
     }
 }

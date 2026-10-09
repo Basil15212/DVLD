@@ -2,6 +2,7 @@
 //using DVLD_Buessness.Users;
 using DVLD_WithoutUC.Aplications;
 using DVLD_WithoutUC.Aplications.Local_Driving_License_Application;
+using DVLD_WithoutUC.Aplications.Renew;
 using DVLD_WithoutUC.TestT_ypes;
 using DVLD_WithoutUC.Users;
 using System;
@@ -109,6 +110,12 @@ namespace DVLD_WithoutUC
         private void retakeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListLocalDrivingLicenseApplications frm = new frmListLocalDrivingLicenseApplications();
+            frm.ShowDialog();
+        }
+
+        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRenewDrivingLiceseApplication frm =new frmRenewDrivingLiceseApplication();
             frm.ShowDialog();
         }
     }

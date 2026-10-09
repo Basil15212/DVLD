@@ -88,6 +88,12 @@
     <Compile Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.Designer.cs">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\Renew\frmRenewDrivingLiceseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\Renew\frmRenewDrivingLiceseApplication.Designer.cs">
+      <DependentUpon>frmRenewDrivingLiceseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global\clsFormat.cs" />
     <Compile Include="Global\clsGlobal.cs" />
     <Compile Include="Global\clsUtil.cs" />
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Local Driving License Application\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Renew\frmRenewDrivingLiceseApplication.resx">
+      <DependentUpon>frmRenewDrivingLiceseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\LocalDrivingLicense\Controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
