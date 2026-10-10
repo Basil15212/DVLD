@@ -228,5 +228,46 @@ namespace DVLDBussnessLayer.Licenses
             DeActivateCurrentLicense();
             return NewLicense;
         }
+
+        //Line 296
+        public clsLicense Replace(enIssueReason IssueReason, int CreatedByUserID)
+        {
+            clsApplication Application =  new clsApplication();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+
+            Application.ApplicationTypeID = (IssueReason == enIssueReason.DamagedReplacement) ?
+            (int)clsApplication.enApplicationType.ReplaceDamagedDrivingLicense :
+            (int)clsApplication.enApplicationType.ReplaceLostDrivingLicense;
+
+
+            Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            Application.LastStatusDate= DateTime.Now;
+            Application.PaidFees = clsApplicationType.Find(Application.ApplicationTypeID).Fees;
+            Application.CreatedByUserID = CreatedByUserID;
+            if (!Application.Save())
+                return null;
+
+            clsLicense NewLicense = new clsLicense();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+                NewLicense.LicenseClass= this.LicenseClass;
+                NewLicense.IssueDate= DateTime.Now;
+            NewLicense.ExpirationDate = this.ExpirationDate;
+            NewLicense.Notes = this.Notes;
+            NewLicense.PaidFees = 0;
+            NewLicense.IsActive= true;
+            NewLicense.IssueReason = IssueReason;
+            NewLicense.CreatedByUserID= CreatedByUserID;
+
+            if (!NewLicense.Save())
+                return null;
+
+            DeActivateCurrentLicense();
+            return NewLicense;
+
+        }
     }
 }

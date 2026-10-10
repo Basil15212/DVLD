@@ -13,6 +13,7 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Appli
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmAddUpdateLocalDrivingLicenseApplication.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmListLocalDrivingLicenseApplications.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Local_Driving_License_Application.frmLocalDrivingLicenseApplicationInfo.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Renew.frmRenewDrivingLiceseApplication.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.LocalDrivingLicense.Controls.ctrlDriverLicenseInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.LocalDrivingLicense.Controls.ctrlDrivingLicenseInfoWithFilter.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.LocalDrivingLicense.frmIssueDriverLicenseFirstTime.resources
@@ -44,4 +45,4 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.csproj.CoreCompileInputs.cache
 D:\My Ripo\DVLD\obj\Debug\DVLD_Wit.33163A76.Up2Date
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.exe
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb
-D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Renew.frmRenewDrivingLiceseApplication.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_License.frmReplaceForDamagedOrLostLicense.resources

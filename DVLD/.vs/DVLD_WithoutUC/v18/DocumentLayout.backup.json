@@ -3,18 +3,23 @@
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\renew\\frmrenewdrivingliceseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\renew\\frmrenewdrivingliceseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\replace lost or damaged license\\frmreplacefordamagedorlostlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\replace lost or damaged license\\frmreplacefordamagedorlostlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\renew\\frmrenewdrivingliceseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\renew\\frmrenewdrivingliceseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa8668.33479.rartemp\\frmRenewLocalDrivingLicenseApplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA57B13F-37ED-430B-BB67-85260D466E9E}|..\\DVLDBussnessLayer\\DVLDBussnessLayer.csproj|d:\\my ripo\\dvldbussnesslayer\\licenses\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\replace lost or damaged license\\frmreplacefordamagedorlostlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\replace lost or damaged license\\frmreplacefordamagedorlostlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa15140.7800.rartemp\\frmReplaceLostOrDamagedLicenseApplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,50 +50,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmRenewDrivingLiceseApplication.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "RelativeDocumentMoniker": "Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "RelativeToolTip": "Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAIAwwFQAAAAMAAAAAAAAAA==",
+              "Title": "frmMainScreen.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeToolTip": "MainScreen\\frmMainScreen.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAqwH0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T01:26:16.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsLicense.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
-              "RelativeDocumentMoniker": "..\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
-              "ToolTip": "D:\\My Ripo\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
-              "RelativeToolTip": "..\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAmwOQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T00:54:14.036Z",
+              "WhenOpened": "2026-10-10T00:21:58.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmRenewLocalDrivingLicenseApplication.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa8668.33479.rartemp\\frmRenewLocalDrivingLicenseApplication.cs",
-              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa8668.33479.rartemp\\frmRenewLocalDrivingLicenseApplication.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Title": "frmMainScreen.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs [Design]",
+              "RelativeToolTip": "MainScreen\\frmMainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T00:19:59.458Z",
+              "WhenOpened": "2026-10-10T00:21:48.314Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmReplaceForDamagedOrLostLicense.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "RelativeDocumentMoniker": "Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "RelativeToolTip": "Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwHkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T23:42:29.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmReplaceLostOrDamagedLicenseApplication.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa15140.7800.rartemp\\frmReplaceLostOrDamagedLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa15140.7800.rartemp\\frmReplaceLostOrDamagedLicenseApplication.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAH0AAACmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T23:19:01.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmRenewDrivingLiceseApplication.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "RelativeDocumentMoniker": "Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs [Design]",
-              "RelativeToolTip": "Aplications\\Renew\\frmRenewDrivingLiceseApplication.cs [Design]",
+              "Title": "frmReplaceForDamagedOrLostLicense.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "RelativeDocumentMoniker": "Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs [Design]",
+              "RelativeToolTip": "Aplications\\Replace Lost Or Damaged License\\frmReplaceForDamagedOrLostLicense.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T00:19:33.879Z",
+              "WhenOpened": "2026-10-09T23:25:45.813Z",
               "EditorCaption": " [Design]"
             }
           ]

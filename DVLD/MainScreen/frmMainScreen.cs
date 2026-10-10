@@ -3,6 +3,7 @@
 using DVLD_WithoutUC.Aplications;
 using DVLD_WithoutUC.Aplications.Local_Driving_License_Application;
 using DVLD_WithoutUC.Aplications.Renew;
+using DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_License;
 using DVLD_WithoutUC.TestT_ypes;
 using DVLD_WithoutUC.Users;
 using System;
@@ -116,6 +117,12 @@ namespace DVLD_WithoutUC
         private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRenewDrivingLiceseApplication frm =new frmRenewDrivingLiceseApplication();
+            frm.ShowDialog();
+        }
+
+        private void replacementForLostOrDamagedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReplaceForDamagedOrLostLicense frm = new frmReplaceForDamagedOrLostLicense();
             frm.ShowDialog();
         }
     }

@@ -94,6 +94,12 @@
     <Compile Include="Aplications\Renew\frmRenewDrivingLiceseApplication.Designer.cs">
       <DependentUpon>frmRenewDrivingLiceseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\Replace Lost Or Damaged License\frmReplaceForDamagedOrLostLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\Replace Lost Or Damaged License\frmReplaceForDamagedOrLostLicense.Designer.cs">
+      <DependentUpon>frmReplaceForDamagedOrLostLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global\clsFormat.cs" />
     <Compile Include="Global\clsGlobal.cs" />
     <Compile Include="Global\clsUtil.cs" />
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Renew\frmRenewDrivingLiceseApplication.resx">
       <DependentUpon>frmRenewDrivingLiceseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Replace Lost Or Damaged License\frmReplaceForDamagedOrLostLicense.resx">
+      <DependentUpon>frmReplaceForDamagedOrLostLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\LocalDrivingLicense\Controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
