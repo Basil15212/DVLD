@@ -46,3 +46,6 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_Wit.33163A76.Up2Date
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.exe
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_License.frmReplaceForDamagedOrLostLicense.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Drivers.frmListDriver.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.Controls.ctrlDriverLicenses.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.frmShowPersonLicensesHistory.resources

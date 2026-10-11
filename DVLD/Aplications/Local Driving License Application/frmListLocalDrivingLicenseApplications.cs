@@ -1,4 +1,5 @@
-﻿using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
+﻿using DVLD_WithoutUC.Licenses;
+using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
 using DVLD_WithoutUC.Tests;
 using DVLDBussnessLayer;
 using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
@@ -237,7 +238,22 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
 
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
+            
+            int LicenseID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID
+                (LocalDrivingLicenseApplicationID).GetActiveLicenseID();
+            if( LicenseID != -1)
+            {
+                frmShowPersonLicensesHistory frm = new frmShowPersonLicensesHistory(LicenseID);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("No License Found!", "No License", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 

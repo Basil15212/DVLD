@@ -94,7 +94,7 @@ namespace DLVDData_Access.Licenses
 		                   Licenses.ExpirationDate, Licenses.IsActive
                             from Licenses join LicenseClasses 
                             ON Licenses.LicenseClass = LicenseClasses.LicenseClassID
-                            where  where DriverID=@DriverID
+                            where  DriverID=@DriverID
                             Order By IsActive Desc, ExpirationDate Desc";
 
             SqlCommand cmd = new SqlCommand(@query, con);

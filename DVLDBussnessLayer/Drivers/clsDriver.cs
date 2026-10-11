@@ -1,4 +1,5 @@
 ﻿using DLVDData_Access.Drivers;
+using DVLDBussnessLayer.Licenses;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -102,5 +103,9 @@ namespace DVLDBussnessLayer.Drivers
         }
 
         //Some License Metouds Are Waiting To be Finished ;
+        public static DataTable GetLicenses(int DriverID)
+        {
+            return clsLicense.GetDriverLicenses(DriverID);
+        }
     }
 }

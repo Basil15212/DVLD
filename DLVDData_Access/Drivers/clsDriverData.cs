@@ -91,6 +91,7 @@ namespace DLVDData_Access.Drivers
 
             try
             {
+                con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 if(reader.HasRows)
                 {
@@ -98,7 +99,8 @@ namespace DLVDData_Access.Drivers
                 }
                 reader.Close();
             }
-            catch {  }   finally { con.Close(); }
+            catch {  }   
+            finally { con.Close(); }
             return dt;
 
         }

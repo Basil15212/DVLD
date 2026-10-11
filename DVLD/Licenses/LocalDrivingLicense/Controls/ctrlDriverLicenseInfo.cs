@@ -78,7 +78,7 @@ namespace DVLD_WithoutUC.Licenses.LocalDrivingLicense.Controls
             lblIssueDate.Text = clsFormat.DateToShort(_License.IssueDate);
             lblIssueReaseon.Text = _License.IssueReasonText;
             lblNotes.Text = _License.Notes == "" ? "No Notes" : _License.Notes;
-            lblIsActive.Text = _License.IsActive  ? "No" : "Yes";
+            lblIsActive.Text = _License.IsActive  ? "Yes" : "No";
             lblDateOfBirth.Text = clsFormat.DateToShort(_License.DriverInfo.PersonInfo.DateOfBirth);
             lblDriverID.Text = _License.DriverID.ToString();
             lblExpDate.Text = clsFormat.DateToShort(_License.ExpirationDate);
