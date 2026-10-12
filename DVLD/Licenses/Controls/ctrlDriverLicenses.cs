@@ -46,16 +46,16 @@ namespace DVLD_WithoutUC.Licenses.Controls
                 dgvLocal.Columns[1].Width = 110;
 
                 dgvLocal.Columns[2].HeaderText = "Class Name";
-                dgvLocal.Columns[2].Width = 270;
+                dgvLocal.Columns[2].Width = 250;
 
                 dgvLocal.Columns[3].HeaderText = "Issue Date";
-                dgvLocal.Columns[3].Width = 170;
+                dgvLocal.Columns[3].Width = 150;
 
                 dgvLocal.Columns[4].HeaderText = "Expiration Date";
-                dgvLocal.Columns[4].Width = 170;
+                dgvLocal.Columns[4].Width = 150;
 
                 dgvLocal.Columns[5].HeaderText = "Is Active";
-                dgvLocal.Columns[5].Width = 110;
+                dgvLocal.Columns[5].Width = 80;
             }
 
         }

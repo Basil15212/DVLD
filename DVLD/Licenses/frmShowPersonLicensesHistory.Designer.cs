@@ -50,7 +50,8 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1344, 909);
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(1337, 843);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(104, 35);
             this.btnClose.TabIndex = 3;
@@ -68,9 +69,9 @@
             // 
             // ctrlDriverLicenses1
             // 
-            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(12, 556);
+            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(7, 554);
             this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1450, 442);
+            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1450, 324);
             this.ctrlDriverLicenses1.TabIndex = 2;
             // 
             // ctrlPersonCardWithFilter1
@@ -88,13 +89,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1474, 964);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.CancelButton = this.btnClose;
+            this.ClientSize = new System.Drawing.Size(1474, 890);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ctrlDriverLicenses1);
             this.Controls.Add(this.ctrlPersonCardWithFilter1);
             this.Controls.Add(this.lblTitle);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmShowPersonLicensesHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Person Licenses History";

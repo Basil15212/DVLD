@@ -85,7 +85,7 @@
             this.tbLocal.Location = new System.Drawing.Point(4, 29);
             this.tbLocal.Name = "tbLocal";
             this.tbLocal.Padding = new System.Windows.Forms.Padding(3);
-            this.tbLocal.Size = new System.Drawing.Size(1744, 266);
+            this.tbLocal.Size = new System.Drawing.Size(1430, 266);
             this.tbLocal.TabIndex = 0;
             this.tbLocal.Text = "Local";
             this.tbLocal.UseVisualStyleBackColor = true;

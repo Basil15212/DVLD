@@ -239,19 +239,13 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application
         private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int LocalDrivingLicenseApplicationID = (int)dgvLocalLicenseApps.CurrentRow.Cells[0].Value;
-            
-            int LicenseID = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID
-                (LocalDrivingLicenseApplicationID).GetActiveLicenseID();
-            if( LicenseID != -1)
-            {
-                frmShowPersonLicensesHistory frm = new frmShowPersonLicensesHistory(LicenseID);
-                frm.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("No License Found!", "No License", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+
+            clsLocalDrivingLicenseApplication Application = 
+                clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+            frmShowPersonLicensesHistory frm = new frmShowPersonLicensesHistory(Application.ApplicantPersonID);
+            frm.ShowDialog();
+
+
 
             //MessageBox.Show("This Featuer Is Not Ready Yet.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
