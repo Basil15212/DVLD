@@ -82,9 +82,14 @@ namespace DVLD_WithoutUC.Licenses.LocalDrivingLicense.Controls
             lblDateOfBirth.Text = clsFormat.DateToShort(_License.DriverInfo.PersonInfo.DateOfBirth);
             lblDriverID.Text = _License.DriverID.ToString();
             lblExpDate.Text = clsFormat.DateToShort(_License.ExpirationDate);
-            lblIsDetained.Text = "No";// Will Be Edit Later!!!
+            lblIsDetained.Text = (_License.IsDetained)?"Yes":"No";// Will Be Edit Later!!!
 
             _LoadPersonImage();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

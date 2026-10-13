@@ -1,6 +1,7 @@
 ﻿using DVLD_Buessness.People;
 //using DVLD_Buessness.Users;
 using DVLD_WithoutUC.Aplications;
+using DVLD_WithoutUC.Aplications.Detained;
 using DVLD_WithoutUC.Aplications.Local_Driving_License_Application;
 using DVLD_WithoutUC.Aplications.Renew;
 using DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_License;
@@ -130,6 +131,12 @@ namespace DVLD_WithoutUC
         private void dirversToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListDriver frm = new frmListDriver();
+            frm.ShowDialog();
+        }
+
+        private void detaineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDetainLicenseApplication frm = new frmDetainLicenseApplication();
             frm.ShowDialog();
         }
     }

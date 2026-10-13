@@ -1,35 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\local driving license application\\frmlistlocaldrivinglicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\local driving license application\\frmlistlocaldrivinglicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa7464.33723.rartemp\\frmListLocalDrivingLicesnseApplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\local driving license application\\frmlistlocaldrivinglicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\local driving license application\\frmlistlocaldrivinglicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -37,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,92 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ctrlDriverLicenses.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeDocumentMoniker": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs [Design]",
-              "RelativeToolTip": "Licenses\\Controls\\ctrlDriverLicenses.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:35:06.74Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ctrlDriverLicenses.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeDocumentMoniker": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeToolTip": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:35:01.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmShowPersonLicensesHistory.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs",
-              "RelativeDocumentMoniker": "Licenses\\frmShowPersonLicensesHistory.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs",
-              "RelativeToolTip": "Licenses\\frmShowPersonLicensesHistory.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAvwCEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:29:53.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmShowPersonLicensesHistory.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs",
-              "RelativeDocumentMoniker": "Licenses\\frmShowPersonLicensesHistory.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs [Design]",
-              "RelativeToolTip": "Licenses\\frmShowPersonLicensesHistory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:30:10.768Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmListLocalDrivingLicesnseApplications.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa7464.33723.rartemp\\frmListLocalDrivingLicesnseApplications.cs",
-              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa7464.33723.rartemp\\frmListLocalDrivingLicesnseApplications.cs",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAAAFUAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:25:01.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmListLocalDrivingLicenseApplications.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "RelativeDocumentMoniker": "Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "RelativeToolTip": "Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAAAPQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:24:39.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmListLocalDrivingLicenseApplications.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "RelativeDocumentMoniker": "Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs [Design]",
-              "RelativeToolTip": "Aplications\\Local Driving License Application\\frmListLocalDrivingLicenseApplications.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T00:24:32.317Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

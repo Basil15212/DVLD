@@ -64,6 +64,12 @@
     <Compile Include="Aplications\Controls\clsApplicationBasicInfo.Designer.cs">
       <DependentUpon>clsApplicationBasicInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\Detained\frmDetainLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\Detained\frmDetainLicenseApplication.Designer.cs">
+      <DependentUpon>frmDetainLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aplications\Local Driving License Application\Controls\ctrlDrivingLicenseApplicationInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Controls\clsApplicationBasicInfo.resx">
       <DependentUpon>clsApplicationBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\Detained\frmDetainLicenseApplication.resx">
+      <DependentUpon>frmDetainLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Local Driving License Application\Controls\ctrlDrivingLicenseApplicationInfo.resx">
       <DependentUpon>ctrlDrivingLicenseApplicationInfo.cs</DependentUpon>

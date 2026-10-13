@@ -49,3 +49,4 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_Lic
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Drivers.frmListDriver.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.Controls.ctrlDriverLicenses.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.frmShowPersonLicensesHistory.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.Detained.frmDetainLicenseApplication.resources

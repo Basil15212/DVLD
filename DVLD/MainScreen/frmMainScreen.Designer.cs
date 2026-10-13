@@ -171,6 +171,7 @@
             this.detaineToolStripMenuItem.Name = "detaineToolStripMenuItem";
             this.detaineToolStripMenuItem.Size = new System.Drawing.Size(308, 34);
             this.detaineToolStripMenuItem.Text = "Detaine Licenses ";
+            this.detaineToolStripMenuItem.Click += new System.EventHandler(this.detaineToolStripMenuItem_Click);
             // 
             // manageAplicatonTypesToolStripMenuItem
             // 
