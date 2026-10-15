@@ -1,4 +1,5 @@
-﻿using DLVDData_Access.Licenses;
+﻿using DLVDData_Access.Detained;
+using DLVDData_Access.Licenses;
 using DVLDBussnessLayer.Detained;
 using DVLDBussnessLayer.Drivers;
 using DVLDBussnessLayer.License_Classes;
@@ -81,7 +82,7 @@ namespace DVLDBussnessLayer.Licenses
 
             this.DriverInfo = clsDriver.FindByDriverID(this.DriverID);
             this.LicenseClassInfo = clsLicenseClass.Find(this.LicenseClass);
-            //this.DetainedInfo = clsDetainedLicense.FindByLicenseID(this.LicenseID);
+            this.DetainInfo = clsDetaindLicense.FindByLicenseID(this.LicenseID);
             Mode = enMode.Update;
         }
 
@@ -207,7 +208,7 @@ namespace DVLDBussnessLayer.Licenses
         }
 
 
-        public bool ReleaseDetainedLicense(int ReleasedByUserID ,int ApplicationID)
+        public bool ReleaseDetainedLicense(int ReleasedByUserID ,ref int ApplicationID)
         {
             clsApplication Application = new clsApplication();
             Application.ApplicantPersonID = this.DriverInfo.PersonID;

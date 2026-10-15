@@ -136,7 +136,31 @@ namespace DVLD_WithoutUC
 
         private void detaineToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //frmDetainLicenseApplication frm = new frmDetainLicenseApplication();
+            //frm.ShowDialog();
+        }
+
+        private void reToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReleaseDetainedLicenseApplication frm = new frmReleaseDetainedLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void manageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListDetainedLicenses frm = new frmListDetainedLicenses();
+            frm.ShowDialog();
+        }
+
+        private void detainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             frmDetainLicenseApplication frm = new frmDetainLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void releaseDetainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReleaseDetainedLicenseApplication frm = new frmReleaseDetainedLicenseApplication();
             frm.ShowDialog();
         }
     }

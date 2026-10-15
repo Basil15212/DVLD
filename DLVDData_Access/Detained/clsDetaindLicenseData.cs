@@ -80,7 +80,7 @@ namespace DLVDData_Access.Detained
                 if (reader.Read())
                 {
                     isFound = true;
-                    DetainedID = (int)reader["DetainedID"];
+                    DetainedID = (int)reader["DetainID"];
                     DetainDate = (DateTime)reader["DetainDate"];
                     FineFees = (decimal)reader["FineFees"];
                     CreatedByUserID = (int)reader["CreatedByUserID"];

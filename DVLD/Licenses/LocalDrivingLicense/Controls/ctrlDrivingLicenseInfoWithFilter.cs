@@ -78,7 +78,7 @@ namespace DVLD_WithoutUC.Licenses.LocalDrivingLicense.Controls
             }
         }
         public void txtLicenseIDFocus()
-        {
+          {
             txtLicenseID.Focus();
         }
 
