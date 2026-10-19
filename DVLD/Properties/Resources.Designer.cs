@@ -513,6 +513,16 @@ namespace DVLD_WithoutUC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_driver_license_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-driver-license-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap International_32 {
             get {
                 object obj = ResourceManager.GetObject("International 32", resourceCulture);
@@ -756,6 +766,26 @@ namespace DVLD_WithoutUC.Properties {
         internal static System.Drawing.Bitmap Number_32 {
             get {
                 object obj = ResourceManager.GetObject("Number 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap objects {
+            get {
+                object obj = ResourceManager.GetObject("objects", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap objects__1_ {
+            get {
+                object obj = ResourceManager.GetObject("objects (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

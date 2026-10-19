@@ -3,19 +3,8 @@
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa14124.9590.rartemp\\ctrlDriverLicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\controls\\ctrldriverlicenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:licenses\\frmshowpersonlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:mainscreen\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,50 +34,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ctrlDriverLicenses.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa14124.9590.rartemp\\ctrlDriverLicenses.cs",
-              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa14124.9590.rartemp\\ctrlDriverLicenses.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAFYAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T02:12:39.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ctrlDriverLicenses.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeDocumentMoniker": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeToolTip": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAqwIoAAAAdAAAAAAAAAA==",
+              "Title": "frmMainScreen.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\MainScreen\\frmMainScreen.cs [Design]",
+              "RelativeToolTip": "MainScreen\\frmMainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T02:11:50.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ctrlDriverLicenses.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "RelativeDocumentMoniker": "Licenses\\Controls\\ctrlDriverLicenses.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\Controls\\ctrlDriverLicenses.cs [Design]",
-              "RelativeToolTip": "Licenses\\Controls\\ctrlDriverLicenses.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T02:11:43.367Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmShowPersonLicensesHistory.cs [Design]",
-              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs",
-              "RelativeDocumentMoniker": "Licenses\\frmShowPersonLicensesHistory.cs",
-              "ToolTip": "D:\\My Ripo\\DVLD\\Licenses\\frmShowPersonLicensesHistory.cs [Design]*",
-              "RelativeToolTip": "Licenses\\frmShowPersonLicensesHistory.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T02:09:07.15Z",
+              "WhenOpened": "2026-10-19T15:49:18.603Z",
               "EditorCaption": " [Design]"
             }
           ]

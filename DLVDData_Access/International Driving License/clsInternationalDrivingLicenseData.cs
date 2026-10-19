@@ -53,7 +53,7 @@ namespace DLVDData_Access.International_Driving_License
             DataTable dt = new DataTable();
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
             string Query = @"
-                            InternationalLicenseID, ApplicationID,DriverID,
+                          select  InternationalLicenseID, ApplicationID,DriverID,
 		                IssuedUsingLocalLicenseID , IssueDate, 
                         ExpirationDate, IsActive
                         from InternationalLicenses 

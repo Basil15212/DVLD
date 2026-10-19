@@ -55,6 +55,7 @@ namespace DVLD_WithoutUC.Aplications.International_License_Application
                 btnIssue.Enabled = false;
                 return;
             }
+            btnIssue.Enabled = true;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

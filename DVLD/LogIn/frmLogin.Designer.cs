@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -38,9 +39,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,16 +59,26 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(340, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 448);
+            this.groupBox1.Size = new System.Drawing.Size(466, 472);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(400, 20);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(33, 34);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(86, 95);
+            this.label3.Location = new System.Drawing.Point(86, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(283, 29);
             this.label3.TabIndex = 6;
@@ -74,7 +86,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(181, 233);
+            this.txtPassword.Location = new System.Drawing.Point(181, 245);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(219, 32);
@@ -83,7 +95,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(181, 176);
+            this.txtUserName.Location = new System.Drawing.Point(181, 185);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(219, 32);
             this.txtUserName.TabIndex = 4;
@@ -91,9 +103,11 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Image = global::DVLD_WithoutUC.Properties.Resources.sign_in_32;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.Location = new System.Drawing.Point(136, 385);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(167, 36);
+            this.btnLogin.Size = new System.Drawing.Size(167, 58);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -103,7 +117,7 @@
             // 
             this.ckbRememberMe.AutoSize = true;
             this.ckbRememberMe.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbRememberMe.Location = new System.Drawing.Point(136, 304);
+            this.ckbRememberMe.Location = new System.Drawing.Point(136, 320);
             this.ckbRememberMe.Name = "ckbRememberMe";
             this.ckbRememberMe.Size = new System.Drawing.Size(167, 26);
             this.ckbRememberMe.TabIndex = 2;
@@ -114,7 +128,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 243);
+            this.label2.Location = new System.Drawing.Point(75, 256);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 22);
             this.label2.TabIndex = 1;
@@ -124,7 +138,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(63, 181);
+            this.label1.Location = new System.Drawing.Point(63, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 22);
             this.label1.TabIndex = 0;
@@ -134,23 +148,25 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // btnClose
+            // pictureBox1
             // 
-            this.btnClose.Location = new System.Drawing.Point(400, 19);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(33, 32);
-            this.btnClose.TabIndex = 7;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Image = global::DVLD_WithoutUC.Properties.Resources.objects;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(312, 440);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 474);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -162,6 +178,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,5 +195,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

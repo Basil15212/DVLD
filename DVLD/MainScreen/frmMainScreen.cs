@@ -2,6 +2,7 @@
 //using DVLD_Buessness.Users;
 using DVLD_WithoutUC.Aplications;
 using DVLD_WithoutUC.Aplications.Detained;
+using DVLD_WithoutUC.Aplications.International_License_Application;
 using DVLD_WithoutUC.Aplications.Local_Driving_License_Application;
 using DVLD_WithoutUC.Aplications.Renew;
 using DVLD_WithoutUC.Aplications.Replace_Lost_Or_Damaged_License;
@@ -161,6 +162,19 @@ namespace DVLD_WithoutUC
         private void releaseDetainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmReleaseDetainedLicenseApplication frm = new frmReleaseDetainedLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewInterNationalLicenseApplication frm = new frmNewInterNationalLicenseApplication();
+            frm.ShowDialog();
+
+        }
+
+        private void internationalLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListInternationalLicenses frm = new frmListInternationalLicenses();
             frm.ShowDialog();
         }
     }

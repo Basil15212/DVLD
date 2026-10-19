@@ -82,6 +82,12 @@
     <Compile Include="Aplications\Detained\frmReleaseDetainedLicenseApplication.Designer.cs">
       <DependentUpon>frmReleaseDetainedLicenseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplications\International License Application\frmListInternationalLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aplications\International License Application\frmListInternationalLicenses.Designer.cs">
+      <DependentUpon>frmListInternationalLicenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aplications\International License Application\frmNewInterNationalLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\Detained\frmReleaseDetainedLicenseApplication.resx">
       <DependentUpon>frmReleaseDetainedLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aplications\International License Application\frmListInternationalLicenses.resx">
+      <DependentUpon>frmListInternationalLicenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Aplications\International License Application\frmNewInterNationalLicenseApplication.resx">
       <DependentUpon>frmNewInterNationalLicenseApplication.cs</DependentUpon>
@@ -812,6 +821,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Written Test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-driver-license-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\objects.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\objects %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

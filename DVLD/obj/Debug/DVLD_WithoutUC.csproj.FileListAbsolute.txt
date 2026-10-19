@@ -55,3 +55,4 @@ D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.pdb
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.Internatioal_Licenses.Controls.ctrlInterNationalLicenseInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Licenses.Internatioal_Licenses.frmShowInternationalLicenseInfo.resources
 D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.International_License_Application.frmNewInterNationalLicenseApplication.resources
+D:\My Ripo\DVLD\obj\Debug\DVLD_WithoutUC.Aplications.International_License_Application.frmListInternationalLicenses.resources
