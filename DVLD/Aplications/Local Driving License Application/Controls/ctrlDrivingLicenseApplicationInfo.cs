@@ -1,4 +1,5 @@
-﻿using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
+﻿using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
+using DVLDBussnessLayer.Applocations.LocalDrivingLicenseApp;
 using DVLDBussnessLayer.License_Classes;
 using System;
 using System.Collections.Generic;
@@ -79,11 +80,18 @@ namespace DVLD_WithoutUC.Aplications.Local_Driving_License_Application.Controls
 
         private void llShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("will Be Finished soon " ,"information" , MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmShoeDriverLicenseInfo frm = new frmShoeDriverLicenseInfo(_LicenseID);
+            frm.ShowDialog();
+            //MessageBox.Show("will Be Finished soon " ,"information" , MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
         }
 
         private void ctrlDrivingLicenseApplicationInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clsApplicationBasicInfo1_Load(object sender, EventArgs e)
         {
 
         }
