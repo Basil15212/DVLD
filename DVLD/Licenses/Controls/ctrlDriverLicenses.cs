@@ -1,4 +1,5 @@
-﻿using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
+﻿using DVLD_WithoutUC.Licenses.Internatioal_Licenses;
+using DVLD_WithoutUC.Licenses.LocalDrivingLicense;
 using DVLDBussnessLayer.Drivers;
 using DVLDBussnessLayer.Licenses;
 using System;
@@ -61,7 +62,27 @@ namespace DVLD_WithoutUC.Licenses.Controls
         }
 
         // international info loading will be here :)
-
+        private void _LoadInternationalLicenseInfo()
+        {
+            _dtDriverInternationalLicensesHistory = clsDriver.GetInternationalLicenses(_DriverID);
+            dgvInterNational.DataSource = _dtDriverInternationalLicensesHistory;
+            lblInternationalRecords.Text = dgvInterNational.Rows.Count.ToString();
+            if(dgvInterNational.Rows.Count>0)
+            {
+                dgvInterNational.Columns[0].HeaderText = "Int.License ID";
+                dgvInterNational.Columns[0].Width = 110;
+                dgvInterNational.Columns[1].HeaderText = "Application ID";
+                dgvInterNational.Columns[1].Width = 110;
+                dgvInterNational.Columns[2].HeaderText = "L.License ID";
+                dgvInterNational.Columns[2].Width = 259;
+                dgvInterNational.Columns[3].HeaderText = "Issue Date";
+                dgvInterNational.Columns[3].Width = 150;
+                dgvInterNational.Columns[4].HeaderText = "Expiration Date";
+                dgvInterNational.Columns[4].Width = 150;
+                dgvInterNational.Columns[5].HeaderText = "Is Active";
+                dgvInterNational.Columns[5].Width = 80;
+            }
+        }
 
 
         public void LoadInfo(int DriverID)
@@ -75,6 +96,7 @@ namespace DVLD_WithoutUC.Licenses.Controls
                 return;
             }
             _LoadLocalLicenseInfo();
+            _LoadInternationalLicenseInfo();
             //Load international will be here:)
 
         }
@@ -89,6 +111,7 @@ namespace DVLD_WithoutUC.Licenses.Controls
 
             _DriverID = _Driver.DriverID;
             _LoadLocalLicenseInfo();
+            _LoadInternationalLicenseInfo();
             //Load international will be here:)
         }
         private void gbLicensesHistory_Enter(object sender, EventArgs e)
@@ -106,7 +129,14 @@ namespace DVLD_WithoutUC.Licenses.Controls
         public void Clear()
         {
            _dtDriverLocalLicensesHistory.Clear();
-            //Will Clear International too :)
+            _dtDriverInternationalLicensesHistory.Clear();
+        }
+
+        private void showInternationalLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int InternationalLicenseID =(int)dgvInterNational.CurrentRow.Cells[0].Value;
+            frmShowInternationalLicenseInfo frm = new frmShowInternationalLicenseInfo(InternationalLicenseID);
+            frm.ShowDialog();
         }
 
         //Show internationa info Will be here :)

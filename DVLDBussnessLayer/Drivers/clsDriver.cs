@@ -1,4 +1,5 @@
 ﻿using DLVDData_Access.Drivers;
+using DVLDBussnessLayer.Applocations.International_Licesne;
 using DVLDBussnessLayer.Licenses;
 using System;
 using System.Collections.Generic;
@@ -106,6 +107,11 @@ namespace DVLDBussnessLayer.Drivers
         public static DataTable GetLicenses(int DriverID)
         {
             return clsLicense.GetDriverLicenses(DriverID);
+        }
+
+        public static DataTable GetInternationalLicenses(int DriverID)
+        {
+            return clsInternationalLicense.GetDriverInternationalLicenses(DriverID);
         }
     }
 }

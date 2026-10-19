@@ -211,13 +211,14 @@
             this.cmsInternaltional.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showInternationalLicenseInfoToolStripMenuItem});
             this.cmsInternaltional.Name = "cmsInternaltional";
-            this.cmsInternaltional.Size = new System.Drawing.Size(331, 36);
+            this.cmsInternaltional.Size = new System.Drawing.Size(331, 69);
             // 
             // showInternationalLicenseInfoToolStripMenuItem
             // 
             this.showInternationalLicenseInfoToolStripMenuItem.Name = "showInternationalLicenseInfoToolStripMenuItem";
             this.showInternationalLicenseInfoToolStripMenuItem.Size = new System.Drawing.Size(330, 32);
             this.showInternationalLicenseInfoToolStripMenuItem.Text = "Show International License Info";
+            this.showInternationalLicenseInfoToolStripMenuItem.Click += new System.EventHandler(this.showInternationalLicenseInfoToolStripMenuItem_Click);
             // 
             // ctrlDriverLicenses
             // 

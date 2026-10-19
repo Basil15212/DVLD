@@ -61,9 +61,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::DVLD_WithoutUC.Properties.Resources.LicenseView_400;
             this.pictureBox1.Location = new System.Drawing.Point(76, 149);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(363, 312);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
