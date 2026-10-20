@@ -33,7 +33,8 @@ namespace DVLD_WithoutUC.Aplications.Detained
         }
         private void frmReleaseDetainedLicenseApplication_Load(object sender, EventArgs e)
         {
-
+            if (ctrlDrivingLicenseInfoWithFilter1.FilterEnabled)
+                ctrlDrivingLicenseInfoWithFilter1.txtLicenseIDFocus();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -65,10 +66,7 @@ namespace DVLD_WithoutUC.Aplications.Detained
             btnRelease.Enabled = true;
         }
 
-        private void frmReleaseDetainedLicenseApplication_Activated(object sender, EventArgs e)
-        {
-            ctrlDrivingLicenseInfoWithFilter1.txtLicenseIDFocus();
-        }
+        
 
         private void llShowLiceseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -89,6 +87,7 @@ namespace DVLD_WithoutUC.Aplications.Detained
             {
                 return;
             }
+
             int ApplicationID = -1;
             bool IsReleased = ctrlDrivingLicenseInfoWithFilter1.SelectedLicenseInfo.ReleaseDetainedLicense(clsGlobal.CurrentUser.UserID,ref ApplicationID);
             lblAppID.Text = ApplicationID.ToString();

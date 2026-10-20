@@ -211,6 +211,7 @@ namespace DVLDBussnessLayer.Licenses
         public bool ReleaseDetainedLicense(int ReleasedByUserID ,ref int ApplicationID)
         {
             clsApplication Application = new clsApplication();
+
             Application.ApplicantPersonID = this.DriverInfo.PersonID;
                 Application.ApplicationDate = DateTime.Now;
 

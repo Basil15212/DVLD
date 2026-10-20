@@ -308,7 +308,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmReleaseDetainedLicenseApplication";
             this.Text = "frmReleaseDetainedLicenseApplication";
-            this.Activated += new System.EventHandler(this.frmReleaseDetainedLicenseApplication_Activated);
+          
             this.Load += new System.EventHandler(this.frmReleaseDetainedLicenseApplication_Load);
             this.gbDetainInfo.ResumeLayout(false);
             this.gbDetainInfo.PerformLayout();

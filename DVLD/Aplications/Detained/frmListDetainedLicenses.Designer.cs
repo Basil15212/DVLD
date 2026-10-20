@@ -77,6 +77,7 @@
             this.dgvDetainLicenses.AllowUserToDeleteRows = false;
             this.dgvDetainLicenses.AllowUserToOrderColumns = true;
             this.dgvDetainLicenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetainLicenses.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvDetainLicenses.Location = new System.Drawing.Point(12, 188);
             this.dgvDetainLicenses.Name = "dgvDetainLicenses";
             this.dgvDetainLicenses.ReadOnly = true;

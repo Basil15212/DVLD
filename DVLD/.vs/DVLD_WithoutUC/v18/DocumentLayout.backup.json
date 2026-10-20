@@ -1,7 +1,25 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}|..\\DLVDData_Access\\DLVDData_Access.csproj|d:\\my ripo\\dlvddata_access\\detained\\clsdetaindlicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\detained\\frmreleasedetainedlicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\detained\\frmreleasedetainedlicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA57B13F-37ED-430B-BB67-85260D466E9E}|..\\DVLDBussnessLayer\\DVLDBussnessLayer.csproj|d:\\my ripo\\dvldbussnesslayer\\detained\\clsdetaindlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA57B13F-37ED-430B-BB67-85260D466E9E}|..\\DVLDBussnessLayer\\DVLDBussnessLayer.csproj|d:\\my ripo\\dvldbussnesslayer\\licenses\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\aplications\\detained\\frmreleasedetainedlicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:aplications\\detained\\frmreleasedetainedlicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +27,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +44,70 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsLicense.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
+              "ToolTip": "D:\\My Ripo\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
+              "RelativeToolTip": "..\\DVLDBussnessLayer\\Licenses\\clsLicense.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAAwOUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T23:01:23.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDetaindLicense.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLDBussnessLayer\\Detained\\clsDetaindLicense.cs",
+              "RelativeDocumentMoniker": "..\\DVLDBussnessLayer\\Detained\\clsDetaindLicense.cs",
+              "ToolTip": "D:\\My Ripo\\DVLDBussnessLayer\\Detained\\clsDetaindLicense.cs",
+              "RelativeToolTip": "..\\DVLDBussnessLayer\\Detained\\clsDetaindLicense.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T22:57:29.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDetaindLicenseData.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DLVDData_Access\\Detained\\clsDetaindLicenseData.cs",
+              "RelativeDocumentMoniker": "..\\DLVDData_Access\\Detained\\clsDetaindLicenseData.cs",
+              "ToolTip": "D:\\My Ripo\\DLVDData_Access\\Detained\\clsDetaindLicenseData.cs",
+              "RelativeToolTip": "..\\DLVDData_Access\\Detained\\clsDetaindLicenseData.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAkwEYAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T22:58:32.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmReleaseDetainedLicenseApplication.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "RelativeDocumentMoniker": "Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "RelativeToolTip": "Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv1YAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T22:51:14.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmReleaseDetainedLicenseApplication.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "RelativeDocumentMoniker": "Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs [Design]",
+              "RelativeToolTip": "Aplications\\Detained\\frmReleaseDetainedLicenseApplication.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T22:51:10.943Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -18,7 +18,7 @@ namespace DLVDData_Access.Detained
         {
             bool isFound = false;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
-            string query = @"Select * from DetainedLicenses where DetainedID =@DetainedID";
+            string query = @"Select * from DetainedLicenses where DetainedID =@DetainedID and IsReleased =0;";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@DetainedID", DetainedID);
 
@@ -68,7 +68,7 @@ namespace DLVDData_Access.Detained
         {
             bool isFound = false;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
-            string query = @"Select * from DetainedLicenses where LicenseID = @LicenseID;";
+            string query = @"Select * from DetainedLicenses where LicenseID = @LicenseID and IsReleased =0;";
 
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@LicenseID", LicenseID);
@@ -201,11 +201,12 @@ namespace DLVDData_Access.Detained
         {
             int affectedRows = 0;
             SqlConnection con = new SqlConnection(clsDataSittings.ConnectionString);
-            string query = @"Update DetainedLicenses
+            string query = @"Update dbo.DetainedLicenses
                             set 
+                            IsReleased = @IsReleased,
                             ReleasedByUserID =@ReleasedByUserID,
                             ReleaseApplicationID = @ReleaseApplicationID,
-                            IsReleased =1,
+                            
                             ReleaseDate =@ReleaseDate
                             where DetainID =@DetainID;";
 
@@ -214,6 +215,7 @@ namespace DLVDData_Access.Detained
             cmd.Parameters.AddWithValue("@ReleaseApplicationID", ReleaseApplicationID);
             cmd.Parameters.AddWithValue("@ReleaseDate" ,DateTime.Now);
             cmd.Parameters.AddWithValue("@DetainID", DetainID);
+            cmd.Parameters.AddWithValue("@IsReleased", 1);
 
             try
 
