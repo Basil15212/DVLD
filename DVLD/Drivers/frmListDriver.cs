@@ -94,10 +94,12 @@ namespace DVLD_WithoutUC.Drivers
             if(Filter != "Full Name" || Filter != "Noational No")
             {
                 _dtDrivers.DefaultView.RowFilter = string.Format("[{0}] = {1}", Filter, txtFilterValue.Text.Trim());
+               
             }
             else
             {
                 _dtDrivers.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", Filter, txtFilterValue.Text.Trim());
+
             }
 
             lblRecords.Text = dgvDrivers.Rows.Count.ToString();

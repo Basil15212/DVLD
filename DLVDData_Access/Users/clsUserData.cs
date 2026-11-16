@@ -446,39 +446,7 @@ namespace DLVDData_Access
             return isFound;
         }
 
-        public static bool DoesPersonHaveUser44(int PersonID)
-        {
-            bool isFound = false;
-
-            SqlConnection connection = new SqlConnection(clsDataSittings.ConnectionString);
-
-            string query = "SELECT Found=1 FROM Users WHERE PersonID = @PersonID";
-
-            SqlCommand command = new SqlCommand(query, connection);
-
-            command.Parameters.AddWithValue("@PersonID", PersonID);
-
-            try
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-
-                isFound = reader.HasRows;
-
-                reader.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-                isFound = false;
-            }
-            finally
-            {
-                connection.Close();
-            }
-
-            return isFound;
-        }
+       
 
         public static bool ChangePassword(int UserID, string NewPassword)
         {
