@@ -1,8 +1,10 @@
 ﻿using DLVDData_Access;
+using DVLDBussnessLayer.Util;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +15,7 @@ namespace DVLDBussnessLayer
         public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode = enMode.AddNew;
 
+        public  bool IsPassWordChanged {  get; set; }
         public int UserID { set; get; }
         public int PersonID { set; get; }
         public clsPerson PersonInfo;
@@ -40,6 +43,7 @@ namespace DVLDBussnessLayer
             this.UserName = Username;
             this.Password = Password;
             this.IsActive = IsActive;
+            this.IsPassWordChanged = false;
 
             Mode = enMode.Update;
         }
@@ -47,18 +51,38 @@ namespace DVLDBussnessLayer
         private bool _AddNewUser()
         {
             //call DataAccess Layer 
+            //Hashing the PassWord
+            string HashedPW = clsPAsswordHash.PassWordHash(this.Password);
 
             this.UserID = clsUserData.AddNewUser(this.PersonID, this.UserName,
-                this.Password, this.IsActive);
+                HashedPW, this.IsActive);
 
-            return (this.UserID != -1);
+            if(this.UserID != -1)
+            {
+                this.Password = HashedPW;
+                return true;
+            }
+            return false;
         }
         private bool _UpdateUser()
         {
             //call DataAccess Layer 
+            string PasswordToSave = this.Password;
+            if(IsPassWordChanged)
+            {
+                PasswordToSave = clsPAsswordHash.PassWordHash(this.Password);
+            }
 
-            return clsUserData.UpdateUser(this.UserID, this.PersonID, this.UserName,
-                this.Password, this.IsActive);
+
+
+            bool IsUPdated = clsUserData.UpdateUser(this.UserID, this.PersonID, this.UserName,
+                PasswordToSave, this.IsActive);
+            if(IsUPdated && IsPassWordChanged)
+            {
+                this.Password = PasswordToSave;
+                this.IsPassWordChanged = false;
+            }
+            return (IsUPdated);
         }
         public static clsUser FindByUserID(int UserID)
         {
@@ -94,17 +118,33 @@ namespace DVLDBussnessLayer
         {
             int UserID = -1;
             int PersonID = -1;
-
+            string StoredPassWord = "";
             bool IsActive = false;
 
-            bool IsFound = clsUserData.GetUserInfoByUsernameAndPassword
-                                (UserName, Password, ref UserID, ref PersonID, ref IsActive);
+            bool IsFound = clsUserData.GetUserInfoByUsername(UserName, ref UserID, ref PersonID, ref StoredPassWord, ref IsActive);
+            //bool IsFound = clsUserData.GetUserInfoByUsernameAndPassword
+            //                    (UserName, Password, ref UserID, ref PersonID, ref IsActive);
 
             if (IsFound)
+            {
+                string HashedPassWord = clsPAsswordHash.PassWordHash(Password);
+                if (HashedPassWord == StoredPassWord)
+                {
+                    return new clsUser(UserID, PersonID, UserName, StoredPassWord, IsActive);
+                }
+                else
+                {
+                    return null;
+                }
+                //return new clsUser(UserID, PersonID, UserName, Password, IsActive);
+            }
                 //we return new object of that User with the right data
-                return new clsUser(UserID, PersonID, UserName, Password, IsActive);
+                
             else
+            {
                 return null;
+            }
+               
         }
 
         public bool Save()
@@ -135,6 +175,12 @@ namespace DVLDBussnessLayer
         public static DataTable GetAllUsers()
         {
             return clsUserData.GetAllUsers();
+        }
+
+        public void ChangePassword(string Password)
+        {
+            this.Password = Password;
+            IsPassWordChanged = true;
         }
 
         public static bool DeleteUser(int UserID)

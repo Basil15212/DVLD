@@ -64,7 +64,54 @@ namespace DLVDData_Access
             return isFound;
         }
 
+        public static bool GetUserInfoByUsername(
+             string UserName,
+             ref int UserID,
+             ref int PersonID,
+             ref string Password,
+                ref bool IsActive)
+        {
+            bool IsFound = false;
 
+            SqlConnection connection =
+                new SqlConnection(clsDataSittings.ConnectionString);
+
+            string query = "SELECT * FROM Users WHERE UserName = @UserName;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@UserName", UserName);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    IsFound = true;
+
+                    UserID = (int)reader["UserID"];
+                    PersonID = (int)reader["PersonID"];
+                    Password = (string)reader["Password"];
+                    IsActive = (bool)reader["IsActive"];
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                IsFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return IsFound;
+        }
         public static bool GetUserInfoByPersonID(int PersonID, ref int UserID, ref string UserName,
           ref string Password, ref bool IsActive)
         {

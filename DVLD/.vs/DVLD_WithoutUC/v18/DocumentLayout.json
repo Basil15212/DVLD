@@ -3,13 +3,12 @@
   "WorkspaceRootPath": "D:\\My Ripo\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA57B13F-37ED-430B-BB67-85260D466E9E}|..\\DVLDBussnessLayer\\DVLDBussnessLayer.csproj|d:\\my ripo\\dvldbussnesslayer\\user\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\users\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:users\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa13876.11959.rartemp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDD07DBA-6ACA-4EFB-8709-727BF33AC6BD}|..\\DLVDData_Access\\DLVDData_Access.csproj|d:\\my ripo\\dlvddata_access\\users\\clsuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|d:\\my ripo\\dvld\\users\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81D4EFEB-B8EE-477F-8F8F-76F8511EDBF3}|DVLD_WithoutUC.csproj|solutionrelative:users\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,32 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa13876.11959.rartemp\\Program.cs",
-              "ToolTip": "C:\\Users\\HP\\AppData\\Local\\Temp\\Rar$DIa13876.11959.rartemp\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T16:36:23.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsUser.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DVLDBussnessLayer\\User\\clsUser.cs",
-              "RelativeDocumentMoniker": "..\\DVLDBussnessLayer\\User\\clsUser.cs",
-              "ToolTip": "D:\\My Ripo\\DVLDBussnessLayer\\User\\clsUser.cs*",
-              "RelativeToolTip": "..\\DVLDBussnessLayer\\User\\clsUser.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwDYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T16:29:13.708Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -63,16 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsUserData.cs",
-              "DocumentMoniker": "D:\\My Ripo\\DLVDData_Access\\Users\\clsUserData.cs",
-              "RelativeDocumentMoniker": "..\\DLVDData_Access\\Users\\clsUserData.cs",
-              "ToolTip": "D:\\My Ripo\\DLVDData_Access\\Users\\clsUserData.cs",
-              "RelativeToolTip": "..\\DLVDData_Access\\Users\\clsUserData.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAkwAUAAAASAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmChangePassword.cs",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Users\\frmChangePassword.cs",
+              "RelativeDocumentMoniker": "Users\\frmChangePassword.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Users\\frmChangePassword.cs",
+              "RelativeToolTip": "Users\\frmChangePassword.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T16:28:07.759Z",
+              "WhenOpened": "2026-11-18T23:06:07.171Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmChangePassword.cs [Design]",
+              "DocumentMoniker": "D:\\My Ripo\\DVLD\\Users\\frmChangePassword.cs",
+              "RelativeDocumentMoniker": "Users\\frmChangePassword.cs",
+              "ToolTip": "D:\\My Ripo\\DVLD\\Users\\frmChangePassword.cs [Design]",
+              "RelativeToolTip": "Users\\frmChangePassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T23:06:14.027Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

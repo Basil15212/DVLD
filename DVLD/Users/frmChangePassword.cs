@@ -1,4 +1,5 @@
 ﻿using DVLDBussnessLayer;
+using DVLDBussnessLayer.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,12 +25,14 @@ namespace DVLD_WithoutUC.Users
         }
         private void changePasswordValidation()
         {
-            if(txtCurrentPassword.Text != _User.Password)
+            if(clsPAsswordHash.PassWordHash( txtCurrentPassword.Text) != _User.Password)
                 errorProvider1.SetError(txtCurrentPassword, "Wrong Password");
             else if(string.IsNullOrEmpty(txtCurrentPassword.Text))
                 errorProvider1.SetError(txtCurrentPassword, "Can't Be Blank");
             else
                 errorProvider1.SetError(txtCurrentPassword, "");
+
+
 
             
 
@@ -66,9 +69,11 @@ namespace DVLD_WithoutUC.Users
                 MessageBox.Show("Some Fields are not Valid" ,"Error" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            _User.Password =txtConfirmPassword.Text;
-            if(_User.Save())
+            //_User.Password =;
+            _User.ChangePassword(txtConfirmPassword.Text);
+            if (_User.Save())
             {
+               
                 MessageBox.Show("Password Changed Successfuly" ,"Success" ,MessageBoxButtons.OK, MessageBoxIcon.Information);
                 gbChangePassword.Enabled = false;
             }

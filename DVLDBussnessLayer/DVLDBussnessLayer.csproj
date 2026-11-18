@@ -56,6 +56,7 @@
     <Compile Include="Test_For_License\Tests\clsTest.cs" />
     <Compile Include="User\clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\clsPAsswordHash.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DLVDData_Access\DLVDData_Access.csproj">

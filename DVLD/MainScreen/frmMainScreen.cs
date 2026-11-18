@@ -177,5 +177,10 @@ namespace DVLD_WithoutUC
             frmListInternationalLicenses frm = new frmListInternationalLicenses();
             frm.ShowDialog();
         }
+
+        private void accountSittingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
